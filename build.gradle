@@ -3,7 +3,7 @@ plugins {
 }
 
 tasks.register('deploy', Sync) {
-    dependsOn(bakeTask)
+    dependsOn('bake')
     from(layout.buildDirectory.dir(jbake.destDirName))
     into(layout.projectDirectory.dir('public'))
 }
