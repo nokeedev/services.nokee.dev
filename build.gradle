@@ -1,0 +1,9 @@
+plugins {
+    id 'org.jbake.site' version '5.0.0'
+}
+
+tasks.register('deploy', Sync) {
+    dependsOn(bakeTask)
+    from(layout.buildDirectory.dir(jbake.destDirName))
+    into(layout.projectDirectory.dir('public'))
+}

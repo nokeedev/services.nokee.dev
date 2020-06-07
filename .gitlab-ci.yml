@@ -1,0 +1,11 @@
+image: nokeedev/generic-builder
+
+pages:
+  stage: deploy
+  script: gradle :deploy
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
