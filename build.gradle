@@ -48,5 +48,5 @@ def siteTask = tasks.register('site', Sync) { task ->
 
 tasks.named('publishToGitHubPages', PublishToGitHubPages) { task ->
     task.publishDirectory.fileProvider(siteTask.map { it.destinationDir })
-    task.uri = uri('https://github.com/nokeedev/services.nokee.dev')
+    task.uri = uri('https://github.com/nokeedev/services.nokee.dev.git') // TODO: Should auto-detect to current repo
 }
