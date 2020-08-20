@@ -9,6 +9,7 @@ import org.gradle.api.DefaultTask;
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Internal;
+import org.gradle.api.tasks.OutputFile;
 import org.gradle.api.tasks.TaskAction;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 
 public abstract class GenerateCurrentVersionJson extends DefaultTask {
-    @Internal
+    @OutputFile
     public abstract RegularFileProperty getOutputFile();
 
     @Internal
