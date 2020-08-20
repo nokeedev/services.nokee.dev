@@ -17,8 +17,7 @@ class HttpRestClient {
         try {
             httpConnection.setRequestMethod("GET");
             httpConnection.setRequestProperty("Accept", "application/json");
-            httpConnection.setDoOutput(true);
-            httpConnection.setDoInput(false);
+            httpConnection.setDoOutput(false);
 
             val basicCredentials = username + ":" + password;
             val basicAuthentication = "Basic " + new String(Base64.getEncoder().encode(basicCredentials.getBytes()));
