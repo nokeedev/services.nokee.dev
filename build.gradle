@@ -10,7 +10,7 @@ buildscript {
 }
 
 plugins {
-    id 'dev.nokee.documentation.github-pages-publish' version '0.2.2'
+    id 'dev.nokee.documentation.github-pages-publish' version '0.2.3'
 }
 
 import dev.nokee.services.tasks.GenerateAllVersionJson
