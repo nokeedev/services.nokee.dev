@@ -1,0 +1,8 @@
+= Nokee Services
+
+This repository offers global services used across Nokee to offer painless native development experience with Gradle.
+
+== Version information
+
+- link:https://services.nokee.dev/versions/current.json[Current Release (json)]
+- link:https://services.nokee.dev/versions/all.json[All (json)]
