@@ -1,0 +1,17 @@
+{
+  "version": "0.4.0",
+  "nightly": false,
+  "buildTime": {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 30
+    },
+    "time": {
+      "hour": 13,
+      "minute": 45,
+      "second": 52,
+      "nano": 582000000
+    }
+  }
+}

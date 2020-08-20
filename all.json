@@ -1,0 +1,1923 @@
+[
+  {
+    "version": "0.5.0-198956b7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 19
+      },
+      "time": {
+        "hour": 13,
+        "minute": 54,
+        "second": 36,
+        "nano": 808000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-253998de",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 11
+      },
+      "time": {
+        "hour": 10,
+        "minute": 47,
+        "second": 30,
+        "nano": 377000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-0acbc211",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 11
+      },
+      "time": {
+        "hour": 1,
+        "minute": 53,
+        "second": 46,
+        "nano": 970000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-ac3afc01",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 5,
+        "second": 30,
+        "nano": 472000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-cc2a87cb",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 4
+      },
+      "time": {
+        "hour": 3,
+        "minute": 25,
+        "second": 20,
+        "nano": 59000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-97e4a80b",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 8,
+        "day": 3
+      },
+      "time": {
+        "hour": 12,
+        "minute": 56,
+        "second": 25,
+        "nano": 891000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-5ad52c2a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 25
+      },
+      "time": {
+        "hour": 21,
+        "minute": 30,
+        "second": 56,
+        "nano": 36000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-5813ccb8",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 25
+      },
+      "time": {
+        "hour": 19,
+        "minute": 9,
+        "second": 32,
+        "nano": 729000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-76bf36fc",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 25
+      },
+      "time": {
+        "hour": 18,
+        "minute": 57,
+        "second": 55,
+        "nano": 99000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-e46c28d9",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 25
+      },
+      "time": {
+        "hour": 18,
+        "minute": 9,
+        "second": 10,
+        "nano": 608000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-b72030d5",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 24
+      },
+      "time": {
+        "hour": 15,
+        "minute": 9,
+        "second": 5,
+        "nano": 443000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-3bcdbd0a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 24
+      },
+      "time": {
+        "hour": 14,
+        "minute": 36,
+        "second": 18,
+        "nano": 377000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-0496fabd",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 24
+      },
+      "time": {
+        "hour": 13,
+        "minute": 14,
+        "second": 32,
+        "nano": 102000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-872bd09e",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 23
+      },
+      "time": {
+        "hour": 12,
+        "minute": 10,
+        "second": 55,
+        "nano": 188000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-f5ad46d4",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 23
+      },
+      "time": {
+        "hour": 9,
+        "minute": 12,
+        "second": 7,
+        "nano": 72000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-e7376b31",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 22
+      },
+      "time": {
+        "hour": 7,
+        "minute": 49,
+        "second": 26,
+        "nano": 789000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-befae5c0",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 21
+      },
+      "time": {
+        "hour": 13,
+        "minute": 33,
+        "second": 49,
+        "nano": 715000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-3ae07961",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 21
+      },
+      "time": {
+        "hour": 7,
+        "minute": 21,
+        "second": 21,
+        "nano": 656000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-65ec2661",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 18,
+        "minute": 57,
+        "second": 49,
+        "nano": 306000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-17dbcc19",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 17,
+        "minute": 22,
+        "second": 11,
+        "nano": 729000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-e6d2ef38",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 15,
+        "minute": 20,
+        "second": 3,
+        "nano": 756000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-5796e0ad",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 14,
+        "minute": 8,
+        "second": 32,
+        "nano": 125000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-33117dfd",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 13,
+        "minute": 32,
+        "second": 22,
+        "nano": 159000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-832a6545",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 17
+      },
+      "time": {
+        "hour": 10,
+        "minute": 17,
+        "second": 25,
+        "nano": 303000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-f2462ead",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 16
+      },
+      "time": {
+        "hour": 14,
+        "minute": 7,
+        "second": 40,
+        "nano": 881000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-8a74011c",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 16
+      },
+      "time": {
+        "hour": 10,
+        "minute": 21,
+        "second": 11,
+        "nano": 632000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-375cdcb6",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 16
+      },
+      "time": {
+        "hour": 7,
+        "minute": 5,
+        "second": 2,
+        "nano": 896000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-d358295e",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 22,
+        "minute": 23,
+        "second": 46,
+        "nano": 145000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-cca058a1",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 22,
+        "minute": 3,
+        "second": 12,
+        "nano": 740000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-11f2a7a4",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 21,
+        "minute": 12,
+        "second": 2,
+        "nano": 877000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-9564e709",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 17,
+        "minute": 15,
+        "second": 16,
+        "nano": 150000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-5630bc13",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 16,
+        "minute": 56,
+        "second": 14,
+        "nano": 134000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-b4090233",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 16,
+        "minute": 47,
+        "second": 8,
+        "nano": 126000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-29d42a6e",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 15
+      },
+      "time": {
+        "hour": 16,
+        "minute": 25,
+        "second": 5,
+        "nano": 297000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-81a97095",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 8
+      },
+      "time": {
+        "hour": 21,
+        "minute": 45,
+        "second": 20,
+        "nano": 968000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-de0880a3",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 7
+      },
+      "time": {
+        "hour": 14,
+        "minute": 39,
+        "second": 54,
+        "nano": 741000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-475f0c94",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 7
+      },
+      "time": {
+        "hour": 13,
+        "minute": 32,
+        "second": 39,
+        "nano": 611000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-6526f7e2",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 7
+      },
+      "time": {
+        "hour": 10,
+        "minute": 56,
+        "second": 32,
+        "nano": 401000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-3859ce49",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 10,
+        "second": 7,
+        "nano": 222000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-c6e6545c",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 29,
+        "second": 8,
+        "nano": 795000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-f99a7723",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 20,
+        "second": 44,
+        "nano": 507000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7a66294a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 27,
+        "second": 59,
+        "nano": 514000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-6f5eac5e",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 42,
+        "second": 38,
+        "nano": 999000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-344632dd",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 31,
+        "second": 51,
+        "nano": 8000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-713bc374",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 17,
+        "second": 4,
+        "nano": 946000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-af33a1e7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 3,
+        "second": 5,
+        "nano": 120000000
+      }
+    }
+  },
+  {
+    "version": "0.5.0-a8f8dfb6",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 7,
+        "day": 3
+      },
+      "time": {
+        "hour": 2,
+        "minute": 39,
+        "second": 33,
+        "nano": 417000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-c0a518b4",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 30
+      },
+      "time": {
+        "hour": 17,
+        "minute": 5,
+        "second": 54,
+        "nano": 545000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-75f7729b",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 30
+      },
+      "time": {
+        "hour": 14,
+        "minute": 22,
+        "second": 35,
+        "nano": 792000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0",
+    "nightly": false,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 30
+      },
+      "time": {
+        "hour": 13,
+        "minute": 45,
+        "second": 52,
+        "nano": 582000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-24da3503",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 29
+      },
+      "time": {
+        "hour": 19,
+        "minute": 40,
+        "second": 39,
+        "nano": 878000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-6d497ec3",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 28
+      },
+      "time": {
+        "hour": 18,
+        "minute": 19,
+        "second": 25,
+        "nano": 873000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7bce79f7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 23,
+        "minute": 56,
+        "second": 19,
+        "nano": 842000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-97e72036",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 19,
+        "minute": 47,
+        "second": 15,
+        "nano": 585000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-0c2b997a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 17,
+        "minute": 10,
+        "second": 28,
+        "nano": 802000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-d28d0370",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 15,
+        "minute": 47,
+        "second": 40,
+        "nano": 584000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-684a9d07",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 14,
+        "minute": 2,
+        "second": 27,
+        "nano": 93000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-8e3a7f93",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 56,
+        "second": 47,
+        "nano": 256000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-65d77feb",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 26
+      },
+      "time": {
+        "hour": 23,
+        "minute": 11,
+        "second": 53,
+        "nano": 353000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7c97d4d7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 26
+      },
+      "time": {
+        "hour": 4,
+        "minute": 46,
+        "second": 20,
+        "nano": 506000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-8266db3e",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 52,
+        "second": 7,
+        "nano": 166000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-820f6a93",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 25
+      },
+      "time": {
+        "hour": 19,
+        "minute": 10,
+        "second": 35,
+        "nano": 443000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-753812c4",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 25
+      },
+      "time": {
+        "hour": 5,
+        "minute": 37,
+        "second": 25,
+        "nano": 736000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7d958cf9",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 25
+      },
+      "time": {
+        "hour": 1,
+        "minute": 32,
+        "second": 57,
+        "nano": 813000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-2ef32105",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 22,
+        "minute": 57,
+        "second": 13,
+        "nano": 939000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-e34f4dbd",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 22,
+        "minute": 23,
+        "second": 37,
+        "nano": 448000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-940a0874",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 22,
+        "minute": 5,
+        "second": 59,
+        "nano": 352000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-d2b95290",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 21,
+        "minute": 21,
+        "second": 23,
+        "nano": 4000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-5cf67792",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 19,
+        "minute": 28,
+        "second": 29,
+        "nano": 625000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-61f853ed",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 18,
+        "minute": 26,
+        "second": 16,
+        "nano": 924000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-53fd1460",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 17,
+        "minute": 43,
+        "second": 59,
+        "nano": 519000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-27373b09",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 17,
+        "minute": 16,
+        "second": 39,
+        "nano": 517000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-446f00fc",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 24
+      },
+      "time": {
+        "hour": 14,
+        "minute": 54,
+        "second": 0,
+        "nano": 42000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-c7d90153",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 23
+      },
+      "time": {
+        "hour": 22,
+        "minute": 42,
+        "second": 15,
+        "nano": 890000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-6eb7602d",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 22
+      },
+      "time": {
+        "hour": 20,
+        "minute": 52,
+        "second": 34,
+        "nano": 958000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-bc0799f7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 22
+      },
+      "time": {
+        "hour": 1,
+        "minute": 7,
+        "second": 46,
+        "nano": 110000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-0a995c9a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 21
+      },
+      "time": {
+        "hour": 23,
+        "minute": 40,
+        "second": 13,
+        "nano": 204000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-e8b72fa6",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 21
+      },
+      "time": {
+        "hour": 15,
+        "minute": 23,
+        "second": 38,
+        "nano": 534000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-b0dc6f9c",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 21
+      },
+      "time": {
+        "hour": 14,
+        "minute": 21,
+        "second": 7,
+        "nano": 175000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-9339a16f",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 20
+      },
+      "time": {
+        "hour": 15,
+        "minute": 30,
+        "second": 23,
+        "nano": 433000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-ee17544a",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 19
+      },
+      "time": {
+        "hour": 23,
+        "minute": 28,
+        "second": 9,
+        "nano": 104000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-1d914516",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 19
+      },
+      "time": {
+        "hour": 21,
+        "minute": 32,
+        "second": 8,
+        "nano": 113000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7d5f5f49",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 19
+      },
+      "time": {
+        "hour": 19,
+        "minute": 15,
+        "second": 45,
+        "nano": 309000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-23783727",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 20,
+        "minute": 16,
+        "second": 16,
+        "nano": 392000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-c54ad415",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 18,
+        "minute": 42,
+        "second": 41,
+        "nano": 634000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-c8ba0271",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 16,
+        "minute": 42,
+        "second": 53,
+        "nano": 860000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-b8093d39",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 14,
+        "minute": 45,
+        "second": 46,
+        "nano": 655000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-86d7a7ff",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 13,
+        "minute": 26,
+        "second": 50,
+        "nano": 42000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-c3ed0636",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 6,
+        "nano": 742000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-cc386cdf",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 1,
+        "minute": 50,
+        "second": 57,
+        "nano": 726000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-6023b040",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 57,
+        "second": 36,
+        "nano": 436000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-2cacd7e9",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 33,
+        "second": 19,
+        "nano": 782000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-42c03da0",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 20,
+        "minute": 50,
+        "second": 10,
+        "nano": 874000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-01ed6c1c",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 20,
+        "minute": 39,
+        "second": 55,
+        "nano": 120000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-934eb633",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 20,
+        "minute": 29,
+        "second": 19,
+        "nano": 133000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-b8d01da6",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 19,
+        "minute": 49,
+        "second": 40,
+        "nano": 666000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-116928a9",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 19,
+        "minute": 23,
+        "second": 53,
+        "nano": 680000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-b846ccd2",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 17,
+        "minute": 16,
+        "second": 1,
+        "nano": 557000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-9f4c9a49",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 19,
+        "second": 1,
+        "nano": 485000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-b54186a3",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 12
+      },
+      "time": {
+        "hour": 2,
+        "minute": 34,
+        "second": 54,
+        "nano": 648000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-0d1f288c",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 11
+      },
+      "time": {
+        "hour": 2,
+        "minute": 11,
+        "second": 45,
+        "nano": 631000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-209cbc9f",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 10
+      },
+      "time": {
+        "hour": 2,
+        "minute": 4,
+        "second": 46,
+        "nano": 124000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-9f2af651",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 9
+      },
+      "time": {
+        "hour": 20,
+        "minute": 26,
+        "second": 1,
+        "nano": 599000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-3c5520b3",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 9
+      },
+      "time": {
+        "hour": 19,
+        "minute": 57,
+        "second": 36,
+        "nano": 970000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-7b33f257",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 9
+      },
+      "time": {
+        "hour": 19,
+        "minute": 23,
+        "second": 52,
+        "nano": 730000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-70a7db64",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 16,
+        "minute": 15,
+        "second": 17,
+        "nano": 628000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-125e6b30",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 14,
+        "minute": 41,
+        "second": 32,
+        "nano": 427000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-072cbbb7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 3,
+        "minute": 56,
+        "second": 56,
+        "nano": 36000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-2e4506c4",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 3,
+        "minute": 43,
+        "second": 15,
+        "nano": 792000000
+      }
+    }
+  },
+  {
+    "version": "0.4.0-9c8416f7",
+    "nightly": true,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 3,
+        "minute": 15,
+        "second": 25,
+        "nano": 705000000
+      }
+    }
+  },
+  {
+    "version": "0.3.0",
+    "nightly": false,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 5,
+        "day": 12
+      },
+      "time": {
+        "hour": 19,
+        "minute": 20,
+        "second": 47,
+        "nano": 471000000
+      }
+    }
+  },
+  {
+    "version": "0.2.0",
+    "nightly": false,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 19,
+        "minute": 1,
+        "second": 42,
+        "nano": 548000000
+      }
+    }
+  },
+  {
+    "version": "0.1.0",
+    "nightly": false,
+    "buildTime": {
+      "date": {
+        "year": 2020,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 16,
+        "minute": 6,
+        "second": 39,
+        "nano": 900000000
+      }
+    }
+  }
+]
