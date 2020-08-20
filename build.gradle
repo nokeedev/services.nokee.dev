@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-    id 'dev.nokee.documentation.github-pages-publish' version '0.2.3'
+    id 'dev.nokee.documentation.github-pages-publish' version '0.2.4'
 }
 
 group = 'dev.nokee'

@@ -11,7 +11,7 @@ jobs:
     - name: Publish to GitHub Pages
       run: ./gradlew publish --stacktrace --scan
       env:
-        GITHUB_AUTHOR ${{ secrets.GITHUB_AUTHOR }}
+        GITHUB_KEY ${{ secrets.GITHUB_ACTOR }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
         BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
