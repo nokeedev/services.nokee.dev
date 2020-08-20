@@ -1,7 +1,9 @@
 name: CI
 
 on:
-  push
+  push:
+    branches:
+      - main
   schedule:
     - cron: '30 2 * * *'
 
