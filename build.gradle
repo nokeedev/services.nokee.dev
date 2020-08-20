@@ -20,7 +20,8 @@ import dev.nokee.services.tasks.GenerateAllVersionJson
 import dev.nokee.services.tasks.GenerateCurrentVersionJson
 import dev.nokee.docs.publish.bintray.credentials.DefaultBintrayCredentials
 import dev.nokee.docs.publish.githubpages.tasks.PublishToGitHubPages
-import dev.nokee.docs.site.tasks.GenerateGitHubCustomDomainCanonicalNameRecord
+import dev.nokee.docs.site.tasks.GenerateGitHubPagesCustomDomainCanonicalNameRecord
+import dev.nokee.docs.site.tasks.GenerateGitHubPagesNoJekyll
 
 def allVersionTask = tasks.register('generateAllVersionJson', GenerateAllVersionJson) { task ->
     task.getOutputFile().set(layout.buildDirectory.file('all.json'))
@@ -32,16 +33,19 @@ def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCu
     task.getCredentials().set(DefaultBintrayCredentials.from(project))
 }
 
-def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHubCustomDomainCanonicalNameRecord) { task ->
+def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHubPagesCustomDomainCanonicalNameRecord) { task ->
     task.getOutputFile().set(layout.buildDirectory.file('CNAME'))
     task.getCustomDomain().set(task.subdomain('services.nokee.dev'))
 }
+
+def noJekyllTask = tasks.register('generateNoJekyll', GenerateGitHubPagesNoJekyll)
 
 def siteTask = tasks.register('site', Sync) { task ->
     task.into('versions') {
         from(allVersionTask.flatMap { it.outputFile })
         from(currentVersionTask.flatMap { it.outputFile })
     }
+    task.from(noJekyllTask.flatMap { it.outputFile })
     task.from(customDomainTask.flatMap { it.outputFile })
     task.destinationDir = layout.buildDirectory.dir('site').get().asFile
 }
