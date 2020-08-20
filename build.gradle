@@ -1,9 +1,42 @@
-plugins {
-    id 'org.jbake.site' version '5.0.0'
+buildscript {
+    dependencies {
+        classpath 'dev.nokee.docs:build-src:latest.integration'
+    }
+    repositories {
+        jcenter()
+        maven { url = 'https://dl.bintray.com/nokeedev/documentations' }
+        maven { url = 'https://dl.bintray.com/nokeedev/distributions-snapshots' }
+    }
 }
 
-tasks.register('deploy', Sync) {
-    dependsOn('bake')
-    from(layout.buildDirectory.dir(jbake.destDirName))
-    into(layout.projectDirectory.dir('public'))
+plugins {
+    id 'dev.nokee.documentation.github-pages-publish' version '0.2.0'
+}
+
+import dev.nokee.services.tasks.GenerateAllVersionJson
+import dev.nokee.services.tasks.GenerateCurrentVersionJson
+import dev.nokee.docs.publish.bintray.credentials.DefaultBintrayCredentials
+import dev.nokee.docs.publish.githubpages.tasks.PublishToGitHubPages
+
+def allVersionTask = tasks.register('generateAllVersionJson', GenerateAllVersionJson) { task ->
+    task.getOutputFile().set(layout.buildDirectory.file('all.json'))
+    task.getCredentials().set(DefaultBintrayCredentials.from(project))
+}
+
+def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCurrentVersionJson) { task ->
+    task.getOutputFile().set(layout.buildDirectory.file('current.json'))
+    task.getCredentials().set(DefaultBintrayCredentials.from(project))
+}
+
+def siteTask = tasks.register('site', Sync) { task ->
+    task.into('versions') {
+        task.from(allVersionTask.flatMap { it.outputFile })
+        task.from(currentVersionTask.flatMap { it.outputFile })
+    }
+    task.destinationDir = layout.buildDirectory.dir('site').get().asFile
+}
+
+tasks.named('publishToGitHubPages', PublishToGitHubPages) { task ->
+    task.publishDirectory.fileProvider(siteTask.map { it.destinationDir })
+    task.uri = uri('https://github.com/nokeedev/services.nokee.dev')
 }

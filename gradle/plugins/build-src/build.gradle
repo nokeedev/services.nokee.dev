@@ -1,0 +1,24 @@
+plugins {
+    id 'dev.gradleplugins.java-gradle-plugin' version '1.1.14'
+}
+
+group = 'dev.nokee.docs'
+version = '1.0'
+
+repositories {
+    jcenter()
+    maven { url = 'https://dl.bintray.com/nokeedev/documentations' }
+    maven { url = 'https://dl.bintray.com/nokeedev/distributions-snapshots' }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:latest.release'
+    annotationProcessor 'org.projectlombok:lombok:latest.release'
+
+    implementation 'com.google.code.gson:gson:latest.release'
+    implementation 'commons-io:commons-io:latest.release'
+
+    implementation('dev.nokee.docs:publishing-bintray:latest.release') {
+        because 'BintrayCredentials'
+    }
+}

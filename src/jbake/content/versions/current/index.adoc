@@ -1,2 +1,0 @@
-:jbake-type: versions_current
-:jbake-status: published

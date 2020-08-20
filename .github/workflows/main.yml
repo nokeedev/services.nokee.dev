@@ -1,0 +1,16 @@
+name: CI
+
+on: push
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Publish to GitHub Pages
+      run: ./gradlew publish --stacktrace --scan
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
+        BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
