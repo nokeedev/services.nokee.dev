@@ -94,12 +94,12 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
         }
     }
 
-    private static String getBintrayUser() {
-        return System.getProperty("BINTRAY_USER");
+    private String getBintrayUser() {
+        return getCredentials().get().getBintrayUser();
     }
 
-    private static String getBintrayKey() {
-        return System.getProperty("BINTRAY_KEY");
+    private String getBintrayKey() {
+        return getCredentials().get().getBintrayKey();
     }
 
     private String getContent(Object uri) {

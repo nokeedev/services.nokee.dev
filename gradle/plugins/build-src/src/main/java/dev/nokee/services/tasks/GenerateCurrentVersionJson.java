@@ -32,11 +32,11 @@ public abstract class GenerateCurrentVersionJson extends DefaultTask {
         FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
     }
 
-    private static String getBintrayUser() {
-        return System.getProperty("BINTRAY_USER");
+    private String getBintrayUser() {
+        return getCredentials().get().getBintrayUser();
     }
 
-    private static String getBintrayKey() {
-        return System.getProperty("BINTRAY_KEY");
+    private String getBintrayKey() {
+        return getCredentials().get().getBintrayKey();
     }
 }
