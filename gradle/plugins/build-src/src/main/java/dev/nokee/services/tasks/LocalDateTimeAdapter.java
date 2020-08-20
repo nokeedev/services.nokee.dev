@@ -11,6 +11,6 @@ import java.time.format.DateTimeFormatter;
 
 class LocalDateTimeAdapter implements JsonSerializer<LocalDateTime> {
     public JsonElement serialize(LocalDateTime date, Type typeOfSrc, JsonSerializationContext context) {
-        return new JsonPrimitive(date.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME));
+        return new JsonPrimitive(date.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
     }
 }
