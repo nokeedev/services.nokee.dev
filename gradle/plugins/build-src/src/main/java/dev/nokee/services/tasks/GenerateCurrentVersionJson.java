@@ -15,6 +15,7 @@ import org.gradle.api.tasks.TaskAction;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.time.LocalDateTime;
 
 public abstract class GenerateCurrentVersionJson extends DefaultTask {
     @OutputFile
@@ -29,7 +30,7 @@ public abstract class GenerateCurrentVersionJson extends DefaultTask {
         val response = new Gson().fromJson(content, BintrayVersionResponse.class);
         val data = NokeeVersionInformation.of(response.getName(), false, response.getCreated());
 
-        FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
+        FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
     }
 
     private String getBintrayUser() {

@@ -15,7 +15,9 @@ import org.gradle.api.tasks.TaskAction;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
@@ -36,7 +38,7 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
 
         val data = allVersions.stream().map(this::versionInformation).filter(it -> !it.equals(NokeeVersionInformationMissingImpl.MISSING_VERSION)).sorted(Comparator.comparing(NokeeVersionInformation::getBuildTime).reversed()).collect(Collectors.toList());
 
-        FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
+        FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
     }
 
     private Set<String> findAllVersions(String repositoryName) {
