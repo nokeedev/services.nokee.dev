@@ -3,7 +3,7 @@ name: CI
 on: push
 
 jobs:
-  check:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -12,5 +12,3 @@ jobs:
       run: ./gradlew publish --stacktrace --scan
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
-        BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
