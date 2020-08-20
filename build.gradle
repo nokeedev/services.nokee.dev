@@ -1,6 +1,7 @@
 buildscript {
     dependencies {
         classpath 'dev.nokee.docs:build-src:latest.integration'
+        classpath 'dev.nokee.docs:site:latest.integration'
     }
     repositories {
         jcenter()
@@ -13,10 +14,13 @@ plugins {
     id 'dev.nokee.documentation.github-pages-publish' version '0.2.3'
 }
 
+group = 'dev.nokee'
+
 import dev.nokee.services.tasks.GenerateAllVersionJson
 import dev.nokee.services.tasks.GenerateCurrentVersionJson
 import dev.nokee.docs.publish.bintray.credentials.DefaultBintrayCredentials
 import dev.nokee.docs.publish.githubpages.tasks.PublishToGitHubPages
+import dev.nokee.docs.site.tasks.GenerateGitHubCustomDomainCanonicalNameRecord
 
 def allVersionTask = tasks.register('generateAllVersionJson', GenerateAllVersionJson) { task ->
     task.getOutputFile().set(layout.buildDirectory.file('all.json'))
@@ -28,11 +32,17 @@ def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCu
     task.getCredentials().set(DefaultBintrayCredentials.from(project))
 }
 
+def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHubCustomDomainCanonicalNameRecord) { task ->
+    task.getOutputFile().set(layout.buildDirectory.file('CNAME'))
+    task.getCustomDomain().set(task.subdomain('services.nokee.dev'))
+}
+
 def siteTask = tasks.register('site', Sync) { task ->
     task.into('versions') {
-        task.from(allVersionTask.flatMap { it.outputFile })
-        task.from(currentVersionTask.flatMap { it.outputFile })
+        from(allVersionTask.flatMap { it.outputFile })
+        from(currentVersionTask.flatMap { it.outputFile })
     }
+    task.from(customDomainTask.flatMap { it.outputFile })
     task.destinationDir = layout.buildDirectory.dir('site').get().asFile
 }
 
