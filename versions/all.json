@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.5.0-2aa6b06b",
+    "nightly": true,
+    "buildTime": "2020-08-22T11:44:28.837"
+  },
+  {
+    "version": "0.5.0-238bd841",
+    "nightly": true,
+    "buildTime": "2020-08-22T10:28:38.022"
+  },
+  {
     "version": "0.5.0-198956b7",
     "nightly": true,
     "buildTime": "2020-08-19T13:54:36.808"
