@@ -25,8 +25,8 @@ public abstract class GenerateLatestSnapshotVersionJson extends DefaultTask {
     public abstract Property<BintrayCredentials> getCredentials();
 
     @TaskAction
-    private void doGenerate() throws IOException, InterruptedException {
-        val content = HttpRestClient.get(new URL("https://api.bintray.com/packages/nokeedev/distributions-snapshots/dev.nokee:nokee-gradle-plugins/versions/_latest"), getBintrayUser(), getBintrayKey());
+    private void doGenerate() throws IOException {
+        val content = HttpRestClient.get(new URL("https://api.bintray.com/packages/nokeedev/distributions-snapshots/artifacts/versions/_latest"), getBintrayUser(), getBintrayKey());
         val response = new Gson().fromJson(content, BintrayVersionResponse.class);
         val data = NokeeVersionInformation.of(response.getName(), false, response.getCreated());
 
