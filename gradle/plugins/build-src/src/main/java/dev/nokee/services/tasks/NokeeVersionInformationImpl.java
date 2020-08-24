@@ -5,8 +5,8 @@ import lombok.Value;
 import java.time.LocalDateTime;
 
 @Value
-class NokeeVersionInformationImpl implements NokeeVersionInformation {
+final class NokeeVersionInformationImpl implements NokeeVersionInformation {
     String version;
-    boolean nightly;
+    boolean snapshot;
     LocalDateTime buildTime;
 }

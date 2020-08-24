@@ -6,10 +6,10 @@ import java.time.ZoneOffset;
 
 interface NokeeVersionInformation {
     String getVersion();
-    boolean isNightly();
+    boolean isSnapshot();
     LocalDateTime getBuildTime();
 
-    static NokeeVersionInformation of(String version, boolean nightly, String buildTime) {
-        return new NokeeVersionInformationImpl(version, nightly, LocalDateTime.ofInstant(Instant.parse(buildTime), ZoneOffset.UTC));
+    static NokeeVersionInformation of(String version, boolean snapshot, String buildTime) {
+        return new NokeeVersionInformationImpl(version, snapshot, LocalDateTime.ofInstant(Instant.parse(buildTime), ZoneOffset.UTC));
     }
 }

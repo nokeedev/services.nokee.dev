@@ -53,9 +53,9 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
     }
 
     private NokeeVersionInformation versionInformation(String version) {
-        val isNightly = version.contains("-");
-        val repositoryName = isNightly ? "distributions-snapshots" : "distributions";
-        val packageName = isNightly ? "artifacts" : "dev.nokee:nokee-gradle-plugins";
+        val isSnapshot = version.contains("-");
+        val repositoryName = isSnapshot ? "distributions-snapshots" : "distributions";
+        val packageName = isSnapshot ? "artifacts" : "dev.nokee:nokee-gradle-plugins";
 
         try {
             val content = HttpRestClient.get(new URL("https://api.bintray.com/packages/nokeedev/" + repositoryName + "/" + packageName + "/versions/" + version), getBintrayUser(), getBintrayKey());
@@ -66,7 +66,7 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
                 return NokeeVersionInformationMissingImpl.MISSING_VERSION;
             }
             try {
-                return NokeeVersionInformation.of(version, isNightly, response.getCreated());
+                return NokeeVersionInformation.of(version, isSnapshot, response.getCreated());
             } catch (Throwable e) {
                 throw new RuntimeException("An error happen, see api query output of '" + content + "'.", e);
             }
@@ -86,7 +86,7 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
         }
 
         @Override
-        public boolean isNightly() {
+        public boolean isSnapshot() {
             throw new UnsupportedOperationException();
         }
 
