@@ -18,6 +18,7 @@ group = 'dev.nokee'
 
 import dev.nokee.services.tasks.GenerateAllVersionJson
 import dev.nokee.services.tasks.GenerateCurrentVersionJson
+import dev.nokee.services.tasks.GenerateLatestSnapshotVersionJson
 import dev.nokee.docs.publish.bintray.credentials.DefaultBintrayCredentials
 import dev.nokee.docs.publish.githubpages.tasks.PublishToGitHubPages
 import dev.nokee.docs.site.tasks.GenerateGitHubPagesCustomDomainCanonicalNameRecord
@@ -33,6 +34,11 @@ def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCu
     task.getCredentials().set(DefaultBintrayCredentials.from(project))
 }
 
+def latestSnapshotVersionTask = tasks.register('generateLatestSnapshotVersionJson', GenerateLatestSnapshotVersionJson) { task ->
+    task.getOutputFile().set(layout.buildDirectory.file('latest-snapshot.json'))
+    task.getCredentials().set(DefaultBintrayCredentials.from(project))
+}
+
 def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHubPagesCustomDomainCanonicalNameRecord) { task ->
     task.getOutputFile().set(layout.buildDirectory.file('CNAME'))
     task.getCustomDomain().set(task.subdomain('services.nokee.dev'))
@@ -44,6 +50,7 @@ def siteTask = tasks.register('site', Sync) { task ->
     task.into('versions') {
         from(allVersionTask.flatMap { it.outputFile })
         from(currentVersionTask.flatMap { it.outputFile })
+        from(latestSnapshotVersionTask.flatMap { it.outputFile })
     }
     task.from(noJekyllTask.flatMap { it.outputFile })
     task.from(customDomainTask.flatMap { it.outputFile })
