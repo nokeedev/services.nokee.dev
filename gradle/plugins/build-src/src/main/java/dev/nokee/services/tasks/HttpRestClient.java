@@ -11,7 +11,9 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Base64;
 
-class HttpRestClient {
+final class HttpRestClient {
+    private HttpRestClient() {}
+
     public static String get(URL endpoint, String username, String password) throws IOException {
         val httpConnection = (HttpURLConnection) endpoint.openConnection();
         try {
