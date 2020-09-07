@@ -1,6 +1,10 @@
+:jbake-type: page
+:jbake-status: published
 = Nokee Services
 
-This repository offers global services used across Nokee to offer painless native development experience with Gradle.
+NOTE: See the link:https://nokee.dev/blog/what-is-the-latest-nokee-version[announcement blog post] for more information.
+
+Welcome to the global services used across Nokee to offer a painless native development experience with Gradle.
 
 == Version information
 
