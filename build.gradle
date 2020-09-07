@@ -12,6 +12,7 @@ buildscript {
 
 plugins {
     id 'dev.nokee.documentation.github-pages-publish' version '0.2.5'
+    id 'org.jbake.site' version '5.3.0'
 }
 
 group = 'dev.nokee'
@@ -46,7 +47,143 @@ def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHu
 
 def noJekyllTask = tasks.register('generateNoJekyll', GenerateGitHubPagesNoJekyll)
 
+//region JBAKE
+import org.gradle.api.internal.artifacts.ArtifactAttributes
+import org.gradle.api.internal.artifacts.transform.UnzipTransform
+import static org.gradle.api.artifacts.type.ArtifactTypeDefinition.DIRECTORY_TYPE
+import static org.gradle.api.artifacts.type.ArtifactTypeDefinition.ZIP_TYPE
+import java.util.concurrent.TimeUnit
+
+def ARTIFACT_FORMAT = Attribute.of("artifactType", String)
+
+configurations.all {
+    resolutionStrategy { ResolutionStrategy r ->
+        r.cacheDynamicVersionsFor(0, TimeUnit.SECONDS)
+        r.cacheChangingModulesFor(0, TimeUnit.SECONDS)
+    }
+}
+
+configurations {
+    // incoming
+    baked { Configuration c ->
+        canBeConsumed = false
+        canBeResolved = true
+        attributes {
+            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'))
+            attribute(ARTIFACT_FORMAT, ArtifactTypeDefinition.DIRECTORY_TYPE)
+        }
+    }
+
+    content {
+        canBeConsumed = false
+        canBeResolved = true
+        attributes {
+            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-content'))
+        }
+    }
+
+    assets {
+        canBeConsumed = false
+        canBeResolved = true
+        attributes {
+            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'))
+            attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE)
+        }
+    }
+
+    templates {
+        canBeConsumed = false
+        canBeResolved = true
+        attributes {
+            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'))
+            attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE)
+        }
+    }
+
+    jbakeProperties {
+        canBeConsumed = false
+        canBeResolved = true
+        attributes {
+            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-properties'))
+        }
+    }
+}
+
+dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
+    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
+    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'));
+    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
+    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'));
+}
+
+dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
+    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
+    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'));
+    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
+    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'));
+}
+
+dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
+    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
+    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'));
+    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
+    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'));
+}
+
+repositories {
+    maven {
+        name = 'S3'
+        credentials(AwsCredentials) {
+            it.accessKey = resolveProperty(project, "AWS_ACCESS_KEY", "dev.nokee.aws.user")
+            it.secretKey = resolveProperty(project, "AWS_SECRET_KEY", "dev.nokee.aws.key")
+        }
+        url = 's3://docs.nokee.dev/'
+    }
+    mavenCentral()
+}
+private String resolveProperty(Project project, String envVarKey, String projectPropKey) {
+    Object propValue = System.getenv().get(envVarKey);
+
+    if (propValue != null) {
+        return propValue.toString();
+    }
+
+    propValue = project.findProperty(projectPropKey);
+    if (propValue != null) {
+        return propValue.toString();
+    }
+
+    return null;
+}
+dependencies {
+    assets 'dev.nokee.docs:jbake:latest.integration'
+    templates 'dev.nokee.docs:jbake:latest.integration'
+    jbakeProperties 'dev.nokee.docs:jbake:latest.integration'
+}
+
+def stageTask = tasks.register('stage', Sync) { task ->
+    task.from(configurations.content) { into('content') }
+    task.from(configurations.templates) { into('templates') }
+    task.from(configurations.assets) { into('assets') }
+    task.from('src/jbake')
+    task.into('content') {
+        from('README.adoc') {
+            rename('README.adoc', 'index.adoc')
+        }
+    }
+    task.destinationDir = layout.buildDirectory.dir('stage').get().asFile
+}
+jbake {
+    srcDirName = 'build/stage'
+}
+tasks.named('bake') {
+    dependsOn(stageTask)
+}
+//endregion
+
 def siteTask = tasks.register('site', Sync) { task ->
+    task.dependsOn('bake')
+    task.from('build/jbake')
     task.into('versions') {
         from(allVersionTask.flatMap { it.outputFile })
         from(currentVersionTask.flatMap { it.outputFile })
