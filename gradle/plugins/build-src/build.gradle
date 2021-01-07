@@ -12,11 +12,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.projectlombok:lombok:latest.release'
-    annotationProcessor 'org.projectlombok:lombok:latest.release'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
-    implementation 'com.google.code.gson:gson:latest.release'
-    implementation 'commons-io:commons-io:latest.release'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'commons-io:commons-io:2.6'
 
     implementation('dev.nokee.docs:publishing-bintray:latest.release') {
         because 'BintrayCredentials'
