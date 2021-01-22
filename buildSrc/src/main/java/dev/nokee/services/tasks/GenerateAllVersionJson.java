@@ -2,10 +2,10 @@ package dev.nokee.services.tasks;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import dev.nokee.docs.publish.bintray.credentials.BintrayCredentials;
 import lombok.val;
 import org.apache.commons.io.FileUtils;
 import org.gradle.api.DefaultTask;
+import org.gradle.api.credentials.PasswordCredentials;
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Internal;
@@ -30,13 +30,13 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
     public abstract RegularFileProperty getOutputFile();
 
     @Internal
-    public abstract Property<BintrayCredentials> getCredentials();
+    public abstract Property<PasswordCredentials> getCredentials();
 
     @TaskAction
     private void doGenerate() throws IOException {
         val allVersions = Stream.of("distributions", "distributions-snapshots").flatMap(it -> findAllVersions(it).stream()).collect(Collectors.toSet());
 
-        val data = allVersions.stream().map(this::versionInformation).filter(it -> !it.equals(NokeeVersionInformationMissingImpl.MISSING_VERSION)).sorted(Comparator.comparing(NokeeVersionInformation::getBuildTime).reversed()).collect(Collectors.toList());
+        val data = allVersions.stream().map(this::versionInformation).filter(it -> !it.equals(NokeeVersionInformation.missing())).sorted(Comparator.comparing(NokeeVersionInformation::getBuildTime).reversed()).collect(Collectors.toList());
 
         FileUtils.write(getOutputFile().get().getAsFile(), new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).setPrettyPrinting().create().toJson(data), Charset.defaultCharset());
     }
@@ -63,7 +63,7 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
 
             if (response.getMessage() != null && response.getMessage().equals("Version '" + version + "' was not found")) {
                 System.out.println(response.getMessage());
-                return NokeeVersionInformationMissingImpl.MISSING_VERSION;
+                return NokeeVersionInformation.missing();
             }
             try {
                 return NokeeVersionInformation.of(version, isSnapshot, response.getCreated());
@@ -75,33 +75,12 @@ public abstract class GenerateAllVersionJson extends DefaultTask {
         }
     }
 
-
-
-    private static class NokeeVersionInformationMissingImpl implements NokeeVersionInformation {
-        public static final NokeeVersionInformation MISSING_VERSION = new NokeeVersionInformationMissingImpl();
-
-        @Override
-        public String getVersion() {
-            throw new UnsupportedOperationException();
-        }
-
-        @Override
-        public boolean isSnapshot() {
-            throw new UnsupportedOperationException();
-        }
-
-        @Override
-        public LocalDateTime getBuildTime() {
-            throw new UnsupportedOperationException();
-        }
-    }
-
     private String getBintrayUser() {
-        return getCredentials().get().getBintrayUser();
+        return getCredentials().get().getUsername();
     }
 
     private String getBintrayKey() {
-        return getCredentials().get().getBintrayKey();
+        return getCredentials().get().getPassword();
     }
 
     private String getContent(Object uri) {

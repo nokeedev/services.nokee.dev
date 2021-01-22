@@ -1,13 +1,12 @@
 plugins {
     id 'dev.gradleplugins.java-gradle-plugin' version '1.1.14'
+    id 'groovy-gradle-plugin'
 }
-
-group = 'dev.nokee.docs'
-version = '1.0'
 
 repositories {
     jcenter()
-    maven { url = 'https://dl.bintray.com/nokeedev/documentations' }
+    mavenLocal()
+    maven { url = 'https://dl.bintray.com/gradle-plugins/distributions' }
     maven { url = 'https://dl.bintray.com/nokeedev/distributions-snapshots' }
 }
 
@@ -18,7 +17,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'commons-io:commons-io:2.6'
 
-    implementation('dev.nokee.docs:publishing-bintray:latest.release') {
-        because 'BintrayCredentials'
-    }
+    implementation 'dev.gradleplugins:documentation-kit:1.0.3'
 }

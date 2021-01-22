@@ -17,13 +17,6 @@ jobs:
       id: gradle
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: publish --scan
+        arguments: publish --scan "-PbintrayUsername=${{ secrets.BINTRAY_USER }}" "-PbintrayPassword=${{ secrets.BINTRAY_KEY }}" "-PdocsNokeeDevAccessKey=${{ secrets.AWS_ACCESS_KEY }}" "-PdocsNokeeDevSecretKey=${{ secrets.AWS_SECRET_KEY }}" "-PpublishToGitHubPagesUsername=nokeedevbot" "-PpublishToGitHubPagesPassword=${{ secrets.GITHUB_TOKEN }}"
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
-      env:
-        GITHUB_KEY: nokeedevbot
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
-        BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
-        AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-        AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}

@@ -1,11 +1,1 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven { url = 'https://dl.bintray.com/nokeedev/documentations' }
-        maven { url = 'https://dl.bintray.com/nokeedev/distributions-snapshots' }
-    }
-}
-
 rootProject.name = 'services.nokee.dev'
-
-includeBuild 'gradle/plugins/build-src'

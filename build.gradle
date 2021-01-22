@@ -1,200 +1,27 @@
-buildscript {
-    dependencies {
-        classpath 'dev.nokee.docs:build-src:latest.integration'
-        classpath 'dev.nokee.docs:site:latest.integration'
-    }
-    repositories {
-        jcenter()
-        maven { url = 'https://dl.bintray.com/nokeedev/documentations' }
-        maven { url = 'https://dl.bintray.com/nokeedev/distributions-snapshots' }
-    }
-}
-
 plugins {
-    id 'dev.nokee.documentation.github-pages-publish' version '0.2.5'
-    id 'org.jbake.site' version '5.3.0'
+    id 'dev.nokeebuild.services-site'
 }
 
-group = 'dev.nokee'
-
-import dev.nokee.services.tasks.GenerateAllVersionJson
-import dev.nokee.services.tasks.GenerateCurrentVersionJson
-import dev.nokee.services.tasks.GenerateLatestSnapshotVersionJson
-import dev.nokee.docs.publish.bintray.credentials.DefaultBintrayCredentials
-import dev.nokee.docs.publish.githubpages.tasks.PublishToGitHubPages
-import dev.nokee.docs.site.tasks.GenerateGitHubPagesCustomDomainCanonicalNameRecord
-import dev.nokee.docs.site.tasks.GenerateGitHubPagesNoJekyll
-
-def allVersionTask = tasks.register('generateAllVersionJson', GenerateAllVersionJson) { task ->
-    task.getOutputFile().set(layout.buildDirectory.file('all.json'))
-    task.getCredentials().set(DefaultBintrayCredentials.from(project))
+site {
+    customDomain = subdomain('services.nokee.dev')
+    repositorySlug = 'nokeedev/services.nokee.dev'
 }
 
-def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCurrentVersionJson) { task ->
-    task.getOutputFile().set(layout.buildDirectory.file('current.json'))
-    task.getCredentials().set(DefaultBintrayCredentials.from(project))
-}
-
-def latestSnapshotVersionTask = tasks.register('generateLatestSnapshotVersionJson', GenerateLatestSnapshotVersionJson) { task ->
-    task.getOutputFile().set(layout.buildDirectory.file('latest-snapshot.json'))
-    task.getCredentials().set(DefaultBintrayCredentials.from(project))
-}
-
-def customDomainTask = tasks.register('generateCustomDomainAlias', GenerateGitHubPagesCustomDomainCanonicalNameRecord) { task ->
-    task.getOutputFile().set(layout.buildDirectory.file('CNAME'))
-    task.getCustomDomain().set(task.subdomain('services.nokee.dev'))
-}
-
-def noJekyllTask = tasks.register('generateNoJekyll', GenerateGitHubPagesNoJekyll)
-
-//region JBAKE
-import org.gradle.api.internal.artifacts.ArtifactAttributes
-import org.gradle.api.internal.artifacts.transform.UnzipTransform
-import static org.gradle.api.artifacts.type.ArtifactTypeDefinition.DIRECTORY_TYPE
-import static org.gradle.api.artifacts.type.ArtifactTypeDefinition.ZIP_TYPE
-import java.util.concurrent.TimeUnit
-
-def ARTIFACT_FORMAT = Attribute.of("artifactType", String)
-
-configurations.all {
-    resolutionStrategy { ResolutionStrategy r ->
-        r.cacheDynamicVersionsFor(0, TimeUnit.SECONDS)
-        r.cacheChangingModulesFor(0, TimeUnit.SECONDS)
-    }
-}
-
-configurations {
-    // incoming
-    baked { Configuration c ->
-        canBeConsumed = false
-        canBeResolved = true
-        attributes {
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'))
-            attribute(ARTIFACT_FORMAT, ArtifactTypeDefinition.DIRECTORY_TYPE)
-        }
-    }
-
-    content {
-        canBeConsumed = false
-        canBeResolved = true
-        attributes {
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-content'))
-        }
-    }
-
-    assets {
-        canBeConsumed = false
-        canBeResolved = true
-        attributes {
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'))
-            attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE)
-        }
-    }
-
-    templates {
-        canBeConsumed = false
-        canBeResolved = true
-        attributes {
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'))
-            attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE)
-        }
-    }
-
-    jbakeProperties {
-        canBeConsumed = false
-        canBeResolved = true
-        attributes {
-            attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-properties'))
-        }
-    }
-}
-
-dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
-    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
-    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'));
-    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
-    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-baked'));
-}
-
-dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
-    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
-    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'));
-    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
-    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-templates'));
-}
-
-dependencies.registerTransform(UnzipTransform.class) { variantTransform ->
-    variantTransform.getFrom().attribute(ARTIFACT_FORMAT, ZIP_TYPE);
-    variantTransform.getFrom().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'));
-    variantTransform.getTo().attribute(ARTIFACT_FORMAT, DIRECTORY_TYPE);
-    variantTransform.getTo().attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named(DocsType, 'jbake-assets'));
+jbake {
+    content.from(tasks.register("renameReadMeFile", Sync) {it.from('README.adoc').rename('README.adoc', 'index.adoc').into("build/tmp/${it.name}") })
 }
 
 repositories {
     maven {
-        name = 'S3'
-        credentials(AwsCredentials) {
-            it.accessKey = resolveProperty(project, "AWS_ACCESS_KEY", "dev.nokee.aws.user")
-            it.secretKey = resolveProperty(project, "AWS_SECRET_KEY", "dev.nokee.aws.key")
-        }
+        name = 'docsNokeeDev'
         url = 's3://docs.nokee.dev/'
+        credentials(AwsCredentials)
     }
-    mavenCentral()
+    jcenter()
 }
-private String resolveProperty(Project project, String envVarKey, String projectPropKey) {
-    Object propValue = System.getenv().get(envVarKey);
 
-    if (propValue != null) {
-        return propValue.toString();
-    }
-
-    propValue = project.findProperty(projectPropKey);
-    if (propValue != null) {
-        return propValue.toString();
-    }
-
-    return null;
-}
 dependencies {
     assets 'dev.nokee.docs:jbake:latest.integration'
     templates 'dev.nokee.docs:jbake:latest.integration'
-    jbakeProperties 'dev.nokee.docs:jbake:latest.integration'
-}
-
-def stageTask = tasks.register('stage', Sync) { task ->
-    task.from(configurations.content) { into('content') }
-    task.from(configurations.templates) { into('templates') }
-    task.from(configurations.assets) { into('assets') }
-    task.from('src/jbake')
-    task.into('content') {
-        from('README.adoc') {
-            rename('README.adoc', 'index.adoc')
-        }
-    }
-    task.destinationDir = layout.buildDirectory.dir('stage').get().asFile
-}
-jbake {
-    srcDirName = 'build/stage'
-}
-tasks.named('bake') {
-    dependsOn(stageTask)
-}
-//endregion
-
-def siteTask = tasks.register('site', Sync) { task ->
-    task.dependsOn('bake')
-    task.from('build/jbake')
-    task.into('versions') {
-        from(allVersionTask.flatMap { it.outputFile })
-        from(currentVersionTask.flatMap { it.outputFile })
-        from(latestSnapshotVersionTask.flatMap { it.outputFile })
-    }
-    task.from(noJekyllTask.flatMap { it.outputFile })
-    task.from(customDomainTask.flatMap { it.outputFile })
-    task.destinationDir = layout.buildDirectory.dir('site').get().asFile
-}
-
-tasks.named('publishToGitHubPages', PublishToGitHubPages) { task ->
-    task.publishDirectory.fileProvider(siteTask.map { it.destinationDir })
-    task.uri = uri('https://github.com/nokeedev/services.nokee.dev.git') // TODO: Should auto-detect to current repo
+    configuration 'dev.nokee.docs:jbake:latest.integration'
 }
