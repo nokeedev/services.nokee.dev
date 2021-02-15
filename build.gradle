@@ -12,6 +12,7 @@ jbake {
 }
 
 repositories {
+    mavenCentral()
     maven {
         name = 'docsNokeeDev'
         url = 's3://docs.nokee.dev/'
