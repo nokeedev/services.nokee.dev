@@ -15,6 +15,9 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'commons-io:commons-io:2.6'
+    implementation 'com.google.guava:guava:30.1-jre'
 
     implementation 'dev.gradleplugins:documentation-kit:1.0.4'
+
+    implementation 'org.apache.maven:maven-repository-metadata:3.6.3'
 }

@@ -9,17 +9,16 @@ plugins {
 
 def allVersionTask = tasks.register('generateAllVersionJson', GenerateAllVersionJson) { task ->
     task.getOutputFile().set(layout.buildDirectory.file('all.json'))
-    task.getCredentials().set(providers.credentials(PasswordCredentials, "bintray"))
 }
 
 def currentVersionTask = tasks.register('generateCurrentVersionJson', GenerateCurrentVersionJson) { task ->
+    task.getAllVersionsFile().set(allVersionTask.flatMap { it.outputFile })
     task.getOutputFile().set(layout.buildDirectory.file('current.json'))
-    task.getCredentials().set(providers.credentials(PasswordCredentials, "bintray"))
 }
 
 def latestSnapshotVersionTask = tasks.register('generateLatestSnapshotVersionJson', GenerateLatestSnapshotVersionJson) { task ->
+    task.getAllVersionsFile().set(allVersionTask.flatMap { it.outputFile })
     task.getOutputFile().set(layout.buildDirectory.file('latest-snapshot.json'))
-    task.getCredentials().set(providers.credentials(PasswordCredentials, "bintray"))
 }
 
 def versionsTask = tasks.register("versions", Sync) { task ->

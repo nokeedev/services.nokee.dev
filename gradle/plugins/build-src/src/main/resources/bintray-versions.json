@@ -1,0 +1,1042 @@
+[
+  {
+    "version": "0.5.0-12c22234",
+    "snapshot": true,
+    "buildTime": "2021-02-01T16:19:51.48"
+  },
+  {
+    "version": "0.5.0-76ec0d7e",
+    "snapshot": true,
+    "buildTime": "2021-01-23T01:14:36.529"
+  },
+  {
+    "version": "0.5.0-e2205332",
+    "snapshot": true,
+    "buildTime": "2021-01-22T23:40:07.049"
+  },
+  {
+    "version": "0.5.0-851e130e",
+    "snapshot": true,
+    "buildTime": "2021-01-22T20:42:12.106"
+  },
+  {
+    "version": "0.5.0-804c9efa",
+    "snapshot": true,
+    "buildTime": "2021-01-22T16:14:47.395"
+  },
+  {
+    "version": "0.5.0-430640a7",
+    "snapshot": true,
+    "buildTime": "2021-01-22T03:26:23.143"
+  },
+  {
+    "version": "0.5.0-79a3a631",
+    "snapshot": true,
+    "buildTime": "2021-01-20T05:38:12.562"
+  },
+  {
+    "version": "0.5.0-7e0da2b0",
+    "snapshot": true,
+    "buildTime": "2021-01-19T19:56:15.988"
+  },
+  {
+    "version": "0.5.0-a7907c13",
+    "snapshot": true,
+    "buildTime": "2021-01-19T14:28:44.229"
+  },
+  {
+    "version": "0.5.0-17974004",
+    "snapshot": true,
+    "buildTime": "2021-01-19T14:08:34.499"
+  },
+  {
+    "version": "0.5.0-992414ca",
+    "snapshot": true,
+    "buildTime": "2021-01-18T23:08:02.921"
+  },
+  {
+    "version": "0.5.0-0007004c",
+    "snapshot": true,
+    "buildTime": "2021-01-18T15:11:09.71"
+  },
+  {
+    "version": "0.5.0-1616a33a",
+    "snapshot": true,
+    "buildTime": "2021-01-15T00:52:39.902"
+  },
+  {
+    "version": "0.5.0-7f4f27b2",
+    "snapshot": true,
+    "buildTime": "2021-01-14T15:23:35.059"
+  },
+  {
+    "version": "0.5.0-5edc00ab",
+    "snapshot": true,
+    "buildTime": "2021-01-12T19:31:45.024"
+  },
+  {
+    "version": "0.5.0-1352cb65",
+    "snapshot": true,
+    "buildTime": "2021-01-12T03:56:46.653"
+  },
+  {
+    "version": "0.5.0-09889c18",
+    "snapshot": true,
+    "buildTime": "2021-01-12T03:53:35.564"
+  },
+  {
+    "version": "0.5.0-7da291a7",
+    "snapshot": true,
+    "buildTime": "2021-01-11T21:24:51.345"
+  },
+  {
+    "version": "0.5.0-2e0b71c3",
+    "snapshot": true,
+    "buildTime": "2021-01-11T20:37:57.193"
+  },
+  {
+    "version": "0.5.0-b04d4de0",
+    "snapshot": true,
+    "buildTime": "2021-01-11T20:31:14.063"
+  },
+  {
+    "version": "0.5.0-7b0e720a",
+    "snapshot": true,
+    "buildTime": "2021-01-11T05:09:41.987"
+  },
+  {
+    "version": "0.5.0-c0982605",
+    "snapshot": true,
+    "buildTime": "2021-01-06T20:48:38.881"
+  },
+  {
+    "version": "0.5.0-fefba369",
+    "snapshot": true,
+    "buildTime": "2021-01-06T20:08:27.471"
+  },
+  {
+    "version": "0.5.0-56230c62",
+    "snapshot": true,
+    "buildTime": "2020-12-28T02:29:49.758"
+  },
+  {
+    "version": "0.5.0-bb8367a9",
+    "snapshot": true,
+    "buildTime": "2020-12-27T22:28:49.193"
+  },
+  {
+    "version": "0.5.0-4d29c1bc",
+    "snapshot": true,
+    "buildTime": "2020-12-26T23:41:38.99"
+  },
+  {
+    "version": "0.5.0-9b670fcc",
+    "snapshot": true,
+    "buildTime": "2020-12-25T13:47:09.147"
+  },
+  {
+    "version": "0.5.0-116471cd",
+    "snapshot": true,
+    "buildTime": "2020-12-25T01:30:30.763"
+  },
+  {
+    "version": "0.5.0-a731f5c6",
+    "snapshot": true,
+    "buildTime": "2020-12-19T17:14:16.725"
+  },
+  {
+    "version": "0.5.0-4dfeed24",
+    "snapshot": true,
+    "buildTime": "2020-12-19T16:33:22.126"
+  },
+  {
+    "version": "0.5.0-bfba9ece",
+    "snapshot": true,
+    "buildTime": "2020-12-19T16:23:58.37"
+  },
+  {
+    "version": "0.5.0-398f9025",
+    "snapshot": true,
+    "buildTime": "2020-12-18T04:50:13.354"
+  },
+  {
+    "version": "0.5.0-9b24735f",
+    "snapshot": true,
+    "buildTime": "2020-12-18T03:51:36.11"
+  },
+  {
+    "version": "0.5.0-8429643d",
+    "snapshot": true,
+    "buildTime": "2020-12-17T23:00:18.713"
+  },
+  {
+    "version": "0.5.0-1f880745",
+    "snapshot": true,
+    "buildTime": "2020-12-17T22:58:07.354"
+  },
+  {
+    "version": "0.5.0-9cfbff59",
+    "snapshot": true,
+    "buildTime": "2020-12-16T22:35:05.93"
+  },
+  {
+    "version": "0.5.0-a445cfa4",
+    "snapshot": true,
+    "buildTime": "2020-12-16T22:34:44.065"
+  },
+  {
+    "version": "0.5.0-9d845800",
+    "snapshot": true,
+    "buildTime": "2020-11-25T15:32:59.903"
+  },
+  {
+    "version": "0.5.0-ed663519",
+    "snapshot": true,
+    "buildTime": "2020-11-25T02:28:28.228"
+  },
+  {
+    "version": "0.5.0-6f1bd0e8",
+    "snapshot": true,
+    "buildTime": "2020-11-25T01:03:52.939"
+  },
+  {
+    "version": "0.5.0-c21823ed",
+    "snapshot": true,
+    "buildTime": "2020-11-25T00:33:56.696"
+  },
+  {
+    "version": "0.5.0-a029c4b6",
+    "snapshot": true,
+    "buildTime": "2020-11-24T21:59:04.768"
+  },
+  {
+    "version": "0.5.0-83f5547c",
+    "snapshot": true,
+    "buildTime": "2020-11-24T21:26:46.988"
+  },
+  {
+    "version": "0.5.0-f85dd12d",
+    "snapshot": true,
+    "buildTime": "2020-11-24T20:28:43.797"
+  },
+  {
+    "version": "0.5.0-5870cc0f",
+    "snapshot": true,
+    "buildTime": "2020-11-24T19:55:16.56"
+  },
+  {
+    "version": "0.5.0-8e7a23f9",
+    "snapshot": true,
+    "buildTime": "2020-11-24T16:04:00.823"
+  },
+  {
+    "version": "0.5.0-f690a79f",
+    "snapshot": true,
+    "buildTime": "2020-11-23T19:09:03.184"
+  },
+  {
+    "version": "0.5.0-cfdcac85",
+    "snapshot": true,
+    "buildTime": "2020-11-21T01:52:43.078"
+  },
+  {
+    "version": "0.5.0-43daa054",
+    "snapshot": true,
+    "buildTime": "2020-11-20T16:29:48.021"
+  },
+  {
+    "version": "0.5.0-2224421b",
+    "snapshot": true,
+    "buildTime": "2020-11-20T15:44:30.581"
+  },
+  {
+    "version": "0.5.0-824df6fc",
+    "snapshot": true,
+    "buildTime": "2020-11-20T05:47:47.289"
+  },
+  {
+    "version": "0.5.0-3201097f",
+    "snapshot": true,
+    "buildTime": "2020-11-19T02:12:28.336"
+  },
+  {
+    "version": "0.5.0-54187d4b",
+    "snapshot": true,
+    "buildTime": "2020-11-16T19:43:30.468"
+  },
+  {
+    "version": "0.5.0-fcde9b9d",
+    "snapshot": true,
+    "buildTime": "2020-11-15T22:26:20.298"
+  },
+  {
+    "version": "0.5.0-f993e5ca",
+    "snapshot": true,
+    "buildTime": "2020-11-13T23:38:55.419"
+  },
+  {
+    "version": "0.5.0-b38847da",
+    "snapshot": true,
+    "buildTime": "2020-11-13T14:42:43.541"
+  },
+  {
+    "version": "0.5.0-74beb508",
+    "snapshot": true,
+    "buildTime": "2020-11-12T23:00:09.012"
+  },
+  {
+    "version": "0.5.0-0366de71",
+    "snapshot": true,
+    "buildTime": "2020-11-12T15:51:18.546"
+  },
+  {
+    "version": "0.5.0-e8164778",
+    "snapshot": true,
+    "buildTime": "2020-11-10T21:43:50.219"
+  },
+  {
+    "version": "0.5.0-dfbba94d",
+    "snapshot": true,
+    "buildTime": "2020-11-02T15:13:25.437"
+  },
+  {
+    "version": "0.5.0-cba37299",
+    "snapshot": true,
+    "buildTime": "2020-11-02T00:38:22.08"
+  },
+  {
+    "version": "0.5.0-81ff4315",
+    "snapshot": true,
+    "buildTime": "2020-10-26T23:46:02.167"
+  },
+  {
+    "version": "0.5.0-74867535",
+    "snapshot": true,
+    "buildTime": "2020-10-26T02:53:14.256"
+  },
+  {
+    "version": "0.5.0-b86ad10d",
+    "snapshot": true,
+    "buildTime": "2020-10-20T03:31:49.299"
+  },
+  {
+    "version": "0.5.0-6a6f3d32",
+    "snapshot": true,
+    "buildTime": "2020-10-14T20:49:40.87"
+  },
+  {
+    "version": "0.5.0-9c15b8ae",
+    "snapshot": true,
+    "buildTime": "2020-10-14T19:55:23.662"
+  },
+  {
+    "version": "0.5.0-983a35f7",
+    "snapshot": true,
+    "buildTime": "2020-10-04T14:18:43.413"
+  },
+  {
+    "version": "0.5.0-48911b5b",
+    "snapshot": true,
+    "buildTime": "2020-10-04T00:16:13.96"
+  },
+  {
+    "version": "0.5.0-3ad2889f",
+    "snapshot": true,
+    "buildTime": "2020-10-02T14:59:48.562"
+  },
+  {
+    "version": "0.5.0-14ae6c3b",
+    "snapshot": true,
+    "buildTime": "2020-09-25T16:16:50.078"
+  },
+  {
+    "version": "0.5.0-111b1cdf",
+    "snapshot": true,
+    "buildTime": "2020-09-25T14:19:55.732"
+  },
+  {
+    "version": "0.5.0-ce82dcc9",
+    "snapshot": true,
+    "buildTime": "2020-09-25T09:40:36.094"
+  },
+  {
+    "version": "0.5.0-9179a892",
+    "snapshot": true,
+    "buildTime": "2020-09-25T09:39:53.26"
+  },
+  {
+    "version": "0.5.0-d9c4c1f7",
+    "snapshot": true,
+    "buildTime": "2020-09-25T09:03:52.591"
+  },
+  {
+    "version": "0.5.0-e168e801",
+    "snapshot": true,
+    "buildTime": "2020-09-18T14:13:20.729"
+  },
+  {
+    "version": "0.5.0-e93ccd9b",
+    "snapshot": true,
+    "buildTime": "2020-09-18T14:10:13.271"
+  },
+  {
+    "version": "0.5.0-408e367e",
+    "snapshot": true,
+    "buildTime": "2020-09-18T10:25:18.713"
+  },
+  {
+    "version": "0.5.0-051c1609",
+    "snapshot": true,
+    "buildTime": "2020-09-18T08:45:58.062"
+  },
+  {
+    "version": "0.5.0-ae5de8e8",
+    "snapshot": true,
+    "buildTime": "2020-09-17T18:38:24.883"
+  },
+  {
+    "version": "0.5.0-e2aa56c6",
+    "snapshot": true,
+    "buildTime": "2020-09-17T12:06:58.706"
+  },
+  {
+    "version": "0.5.0-f6cb756a",
+    "snapshot": true,
+    "buildTime": "2020-09-16T18:24:46.293"
+  },
+  {
+    "version": "0.5.0-d379884c",
+    "snapshot": true,
+    "buildTime": "2020-09-15T11:48:27.134"
+  },
+  {
+    "version": "0.5.0-a3e2b8ef",
+    "snapshot": true,
+    "buildTime": "2020-09-15T07:28:45.928"
+  },
+  {
+    "version": "0.5.0-97ed5282",
+    "snapshot": true,
+    "buildTime": "2020-09-15T07:07:15.237"
+  },
+  {
+    "version": "0.5.0-d7f7b590",
+    "snapshot": true,
+    "buildTime": "2020-09-15T02:33:08.795"
+  },
+  {
+    "version": "0.5.0-b4ef0c9e",
+    "snapshot": true,
+    "buildTime": "2020-09-14T14:49:26.914"
+  },
+  {
+    "version": "0.5.0-8631670b",
+    "snapshot": true,
+    "buildTime": "2020-09-14T11:44:24.068"
+  },
+  {
+    "version": "0.5.0-ef3bc4bc",
+    "snapshot": true,
+    "buildTime": "2020-08-27T08:41:40.485"
+  },
+  {
+    "version": "0.5.0-a6f88c6c",
+    "snapshot": true,
+    "buildTime": "2020-08-25T09:18:37.864"
+  },
+  {
+    "version": "0.5.0-7b88f003",
+    "snapshot": true,
+    "buildTime": "2020-08-25T08:13:07.11"
+  },
+  {
+    "version": "0.5.0-8be2073c",
+    "snapshot": true,
+    "buildTime": "2020-08-24T19:52:26.479"
+  },
+  {
+    "version": "0.5.0-f34e57e3",
+    "snapshot": true,
+    "buildTime": "2020-08-24T15:03:56.876"
+  },
+  {
+    "version": "0.5.0-ff417163",
+    "snapshot": true,
+    "buildTime": "2020-08-24T14:29:51.749"
+  },
+  {
+    "version": "0.5.0-2aa6b06b",
+    "snapshot": true,
+    "buildTime": "2020-08-22T11:44:28.837"
+  },
+  {
+    "version": "0.5.0-238bd841",
+    "snapshot": true,
+    "buildTime": "2020-08-22T10:28:38.022"
+  },
+  {
+    "version": "0.5.0-198956b7",
+    "snapshot": true,
+    "buildTime": "2020-08-19T13:54:36.808"
+  },
+  {
+    "version": "0.5.0-253998de",
+    "snapshot": true,
+    "buildTime": "2020-08-11T10:47:30.377"
+  },
+  {
+    "version": "0.5.0-0acbc211",
+    "snapshot": true,
+    "buildTime": "2020-08-11T01:53:46.97"
+  },
+  {
+    "version": "0.5.0-ac3afc01",
+    "snapshot": true,
+    "buildTime": "2020-08-05T07:05:30.472"
+  },
+  {
+    "version": "0.5.0-cc2a87cb",
+    "snapshot": true,
+    "buildTime": "2020-08-04T03:25:20.059"
+  },
+  {
+    "version": "0.5.0-97e4a80b",
+    "snapshot": true,
+    "buildTime": "2020-08-03T12:56:25.891"
+  },
+  {
+    "version": "0.5.0-5ad52c2a",
+    "snapshot": true,
+    "buildTime": "2020-07-25T21:30:56.036"
+  },
+  {
+    "version": "0.5.0-5813ccb8",
+    "snapshot": true,
+    "buildTime": "2020-07-25T19:09:32.729"
+  },
+  {
+    "version": "0.5.0-76bf36fc",
+    "snapshot": true,
+    "buildTime": "2020-07-25T18:57:55.099"
+  },
+  {
+    "version": "0.5.0-e46c28d9",
+    "snapshot": true,
+    "buildTime": "2020-07-25T18:09:10.608"
+  },
+  {
+    "version": "0.5.0-b72030d5",
+    "snapshot": true,
+    "buildTime": "2020-07-24T15:09:05.443"
+  },
+  {
+    "version": "0.5.0-3bcdbd0a",
+    "snapshot": true,
+    "buildTime": "2020-07-24T14:36:18.377"
+  },
+  {
+    "version": "0.5.0-0496fabd",
+    "snapshot": true,
+    "buildTime": "2020-07-24T13:14:32.102"
+  },
+  {
+    "version": "0.5.0-872bd09e",
+    "snapshot": true,
+    "buildTime": "2020-07-23T12:10:55.188"
+  },
+  {
+    "version": "0.5.0-f5ad46d4",
+    "snapshot": true,
+    "buildTime": "2020-07-23T09:12:07.072"
+  },
+  {
+    "version": "0.5.0-e7376b31",
+    "snapshot": true,
+    "buildTime": "2020-07-22T07:49:26.789"
+  },
+  {
+    "version": "0.5.0-befae5c0",
+    "snapshot": true,
+    "buildTime": "2020-07-21T13:33:49.715"
+  },
+  {
+    "version": "0.5.0-3ae07961",
+    "snapshot": true,
+    "buildTime": "2020-07-21T07:21:21.656"
+  },
+  {
+    "version": "0.5.0-65ec2661",
+    "snapshot": true,
+    "buildTime": "2020-07-17T18:57:49.306"
+  },
+  {
+    "version": "0.5.0-17dbcc19",
+    "snapshot": true,
+    "buildTime": "2020-07-17T17:22:11.729"
+  },
+  {
+    "version": "0.5.0-e6d2ef38",
+    "snapshot": true,
+    "buildTime": "2020-07-17T15:20:03.756"
+  },
+  {
+    "version": "0.5.0-5796e0ad",
+    "snapshot": true,
+    "buildTime": "2020-07-17T14:08:32.125"
+  },
+  {
+    "version": "0.5.0-33117dfd",
+    "snapshot": true,
+    "buildTime": "2020-07-17T13:32:22.159"
+  },
+  {
+    "version": "0.5.0-832a6545",
+    "snapshot": true,
+    "buildTime": "2020-07-17T10:17:25.303"
+  },
+  {
+    "version": "0.5.0-f2462ead",
+    "snapshot": true,
+    "buildTime": "2020-07-16T14:07:40.881"
+  },
+  {
+    "version": "0.5.0-8a74011c",
+    "snapshot": true,
+    "buildTime": "2020-07-16T10:21:11.632"
+  },
+  {
+    "version": "0.5.0-375cdcb6",
+    "snapshot": true,
+    "buildTime": "2020-07-16T07:05:02.896"
+  },
+  {
+    "version": "0.5.0-d358295e",
+    "snapshot": true,
+    "buildTime": "2020-07-15T22:23:46.145"
+  },
+  {
+    "version": "0.5.0-cca058a1",
+    "snapshot": true,
+    "buildTime": "2020-07-15T22:03:12.74"
+  },
+  {
+    "version": "0.5.0-11f2a7a4",
+    "snapshot": true,
+    "buildTime": "2020-07-15T21:12:02.877"
+  },
+  {
+    "version": "0.5.0-9564e709",
+    "snapshot": true,
+    "buildTime": "2020-07-15T17:15:16.15"
+  },
+  {
+    "version": "0.5.0-5630bc13",
+    "snapshot": true,
+    "buildTime": "2020-07-15T16:56:14.134"
+  },
+  {
+    "version": "0.5.0-b4090233",
+    "snapshot": true,
+    "buildTime": "2020-07-15T16:47:08.126"
+  },
+  {
+    "version": "0.5.0-29d42a6e",
+    "snapshot": true,
+    "buildTime": "2020-07-15T16:25:05.297"
+  },
+  {
+    "version": "0.5.0-81a97095",
+    "snapshot": true,
+    "buildTime": "2020-07-08T21:45:20.968"
+  },
+  {
+    "version": "0.5.0-de0880a3",
+    "snapshot": true,
+    "buildTime": "2020-07-07T14:39:54.741"
+  },
+  {
+    "version": "0.5.0-475f0c94",
+    "snapshot": true,
+    "buildTime": "2020-07-07T13:32:39.611"
+  },
+  {
+    "version": "0.5.0-6526f7e2",
+    "snapshot": true,
+    "buildTime": "2020-07-07T10:56:32.401"
+  },
+  {
+    "version": "0.5.0-3859ce49",
+    "snapshot": true,
+    "buildTime": "2020-07-06T19:10:07.222"
+  },
+  {
+    "version": "0.5.0-c6e6545c",
+    "snapshot": true,
+    "buildTime": "2020-07-06T11:29:08.795"
+  },
+  {
+    "version": "0.5.0-f99a7723",
+    "snapshot": true,
+    "buildTime": "2020-07-06T10:20:44.507"
+  },
+  {
+    "version": "0.4.0-7a66294a",
+    "snapshot": true,
+    "buildTime": "2020-07-06T06:27:59.514"
+  },
+  {
+    "version": "0.5.0-6f5eac5e",
+    "snapshot": true,
+    "buildTime": "2020-07-03T03:42:38.999"
+  },
+  {
+    "version": "0.5.0-344632dd",
+    "snapshot": true,
+    "buildTime": "2020-07-03T03:31:51.008"
+  },
+  {
+    "version": "0.5.0-713bc374",
+    "snapshot": true,
+    "buildTime": "2020-07-03T03:17:04.946"
+  },
+  {
+    "version": "0.5.0-af33a1e7",
+    "snapshot": true,
+    "buildTime": "2020-07-03T03:03:05.12"
+  },
+  {
+    "version": "0.5.0-a8f8dfb6",
+    "snapshot": true,
+    "buildTime": "2020-07-03T02:39:33.417"
+  },
+  {
+    "version": "0.4.0-c0a518b4",
+    "snapshot": true,
+    "buildTime": "2020-06-30T17:05:54.545"
+  },
+  {
+    "version": "0.4.0-75f7729b",
+    "snapshot": true,
+    "buildTime": "2020-06-30T14:22:35.792"
+  },
+  {
+    "version": "0.4.0",
+    "snapshot": false,
+    "buildTime": "2020-06-30T13:45:52.582"
+  },
+  {
+    "version": "0.4.0-24da3503",
+    "snapshot": true,
+    "buildTime": "2020-06-29T19:40:39.878"
+  },
+  {
+    "version": "0.4.0-6d497ec3",
+    "snapshot": true,
+    "buildTime": "2020-06-28T18:19:25.873"
+  },
+  {
+    "version": "0.4.0-7bce79f7",
+    "snapshot": true,
+    "buildTime": "2020-06-27T23:56:19.842"
+  },
+  {
+    "version": "0.4.0-97e72036",
+    "snapshot": true,
+    "buildTime": "2020-06-27T19:47:15.585"
+  },
+  {
+    "version": "0.4.0-0c2b997a",
+    "snapshot": true,
+    "buildTime": "2020-06-27T17:10:28.802"
+  },
+  {
+    "version": "0.4.0-d28d0370",
+    "snapshot": true,
+    "buildTime": "2020-06-27T15:47:40.584"
+  },
+  {
+    "version": "0.4.0-684a9d07",
+    "snapshot": true,
+    "buildTime": "2020-06-27T14:02:27.093"
+  },
+  {
+    "version": "0.4.0-8e3a7f93",
+    "snapshot": true,
+    "buildTime": "2020-06-27T00:56:47.256"
+  },
+  {
+    "version": "0.4.0-65d77feb",
+    "snapshot": true,
+    "buildTime": "2020-06-26T23:11:53.353"
+  },
+  {
+    "version": "0.4.0-7c97d4d7",
+    "snapshot": true,
+    "buildTime": "2020-06-26T04:46:20.506"
+  },
+  {
+    "version": "0.4.0-8266db3e",
+    "snapshot": true,
+    "buildTime": "2020-06-26T00:52:07.166"
+  },
+  {
+    "version": "0.4.0-820f6a93",
+    "snapshot": true,
+    "buildTime": "2020-06-25T19:10:35.443"
+  },
+  {
+    "version": "0.4.0-753812c4",
+    "snapshot": true,
+    "buildTime": "2020-06-25T05:37:25.736"
+  },
+  {
+    "version": "0.4.0-7d958cf9",
+    "snapshot": true,
+    "buildTime": "2020-06-25T01:32:57.813"
+  },
+  {
+    "version": "0.4.0-2ef32105",
+    "snapshot": true,
+    "buildTime": "2020-06-24T22:57:13.939"
+  },
+  {
+    "version": "0.4.0-e34f4dbd",
+    "snapshot": true,
+    "buildTime": "2020-06-24T22:23:37.448"
+  },
+  {
+    "version": "0.4.0-940a0874",
+    "snapshot": true,
+    "buildTime": "2020-06-24T22:05:59.352"
+  },
+  {
+    "version": "0.4.0-d2b95290",
+    "snapshot": true,
+    "buildTime": "2020-06-24T21:21:23.004"
+  },
+  {
+    "version": "0.4.0-5cf67792",
+    "snapshot": true,
+    "buildTime": "2020-06-24T19:28:29.625"
+  },
+  {
+    "version": "0.4.0-61f853ed",
+    "snapshot": true,
+    "buildTime": "2020-06-24T18:26:16.924"
+  },
+  {
+    "version": "0.4.0-53fd1460",
+    "snapshot": true,
+    "buildTime": "2020-06-24T17:43:59.519"
+  },
+  {
+    "version": "0.4.0-27373b09",
+    "snapshot": true,
+    "buildTime": "2020-06-24T17:16:39.517"
+  },
+  {
+    "version": "0.4.0-446f00fc",
+    "snapshot": true,
+    "buildTime": "2020-06-24T14:54:00.042"
+  },
+  {
+    "version": "0.4.0-c7d90153",
+    "snapshot": true,
+    "buildTime": "2020-06-23T22:42:15.89"
+  },
+  {
+    "version": "0.4.0-6eb7602d",
+    "snapshot": true,
+    "buildTime": "2020-06-22T20:52:34.958"
+  },
+  {
+    "version": "0.4.0-bc0799f7",
+    "snapshot": true,
+    "buildTime": "2020-06-22T01:07:46.11"
+  },
+  {
+    "version": "0.4.0-0a995c9a",
+    "snapshot": true,
+    "buildTime": "2020-06-21T23:40:13.204"
+  },
+  {
+    "version": "0.4.0-e8b72fa6",
+    "snapshot": true,
+    "buildTime": "2020-06-21T15:23:38.534"
+  },
+  {
+    "version": "0.4.0-b0dc6f9c",
+    "snapshot": true,
+    "buildTime": "2020-06-21T14:21:07.175"
+  },
+  {
+    "version": "0.4.0-9339a16f",
+    "snapshot": true,
+    "buildTime": "2020-06-20T15:30:23.433"
+  },
+  {
+    "version": "0.4.0-ee17544a",
+    "snapshot": true,
+    "buildTime": "2020-06-19T23:28:09.104"
+  },
+  {
+    "version": "0.4.0-1d914516",
+    "snapshot": true,
+    "buildTime": "2020-06-19T21:32:08.113"
+  },
+  {
+    "version": "0.4.0-7d5f5f49",
+    "snapshot": true,
+    "buildTime": "2020-06-19T19:15:45.309"
+  },
+  {
+    "version": "0.4.0-23783727",
+    "snapshot": true,
+    "buildTime": "2020-06-17T20:16:16.392"
+  },
+  {
+    "version": "0.4.0-c54ad415",
+    "snapshot": true,
+    "buildTime": "2020-06-17T18:42:41.634"
+  },
+  {
+    "version": "0.4.0-c8ba0271",
+    "snapshot": true,
+    "buildTime": "2020-06-17T16:42:53.86"
+  },
+  {
+    "version": "0.4.0-b8093d39",
+    "snapshot": true,
+    "buildTime": "2020-06-17T14:45:46.655"
+  },
+  {
+    "version": "0.4.0-86d7a7ff",
+    "snapshot": true,
+    "buildTime": "2020-06-17T13:26:50.042"
+  },
+  {
+    "version": "0.4.0-c3ed0636",
+    "snapshot": true,
+    "buildTime": "2020-06-17T13:00:06.742"
+  },
+  {
+    "version": "0.4.0-cc386cdf",
+    "snapshot": true,
+    "buildTime": "2020-06-17T01:50:57.726"
+  },
+  {
+    "version": "0.4.0-6023b040",
+    "snapshot": true,
+    "buildTime": "2020-06-17T00:57:36.436"
+  },
+  {
+    "version": "0.4.0-2cacd7e9",
+    "snapshot": true,
+    "buildTime": "2020-06-17T00:33:19.782"
+  },
+  {
+    "version": "0.4.0-42c03da0",
+    "snapshot": true,
+    "buildTime": "2020-06-16T20:50:10.874"
+  },
+  {
+    "version": "0.4.0-01ed6c1c",
+    "snapshot": true,
+    "buildTime": "2020-06-16T20:39:55.12"
+  },
+  {
+    "version": "0.4.0-934eb633",
+    "snapshot": true,
+    "buildTime": "2020-06-16T20:29:19.133"
+  },
+  {
+    "version": "0.4.0-b8d01da6",
+    "snapshot": true,
+    "buildTime": "2020-06-16T19:49:40.666"
+  },
+  {
+    "version": "0.4.0-116928a9",
+    "snapshot": true,
+    "buildTime": "2020-06-16T19:23:53.68"
+  },
+  {
+    "version": "0.4.0-b846ccd2",
+    "snapshot": true,
+    "buildTime": "2020-06-16T17:16:01.557"
+  },
+  {
+    "version": "0.4.0-9f4c9a49",
+    "snapshot": true,
+    "buildTime": "2020-06-14T00:19:01.485"
+  },
+  {
+    "version": "0.4.0-b54186a3",
+    "snapshot": true,
+    "buildTime": "2020-06-12T02:34:54.648"
+  },
+  {
+    "version": "0.4.0-0d1f288c",
+    "snapshot": true,
+    "buildTime": "2020-06-11T02:11:45.631"
+  },
+  {
+    "version": "0.4.0-209cbc9f",
+    "snapshot": true,
+    "buildTime": "2020-06-10T02:04:46.124"
+  },
+  {
+    "version": "0.4.0-9f2af651",
+    "snapshot": true,
+    "buildTime": "2020-06-09T20:26:01.599"
+  },
+  {
+    "version": "0.4.0-3c5520b3",
+    "snapshot": true,
+    "buildTime": "2020-06-09T19:57:36.97"
+  },
+  {
+    "version": "0.4.0-7b33f257",
+    "snapshot": true,
+    "buildTime": "2020-06-09T19:23:52.73"
+  },
+  {
+    "version": "0.4.0-70a7db64",
+    "snapshot": true,
+    "buildTime": "2020-06-07T16:15:17.628"
+  },
+  {
+    "version": "0.4.0-125e6b30",
+    "snapshot": true,
+    "buildTime": "2020-06-07T14:41:32.427"
+  },
+  {
+    "version": "0.4.0-072cbbb7",
+    "snapshot": true,
+    "buildTime": "2020-06-07T03:56:56.036"
+  },
+  {
+    "version": "0.4.0-2e4506c4",
+    "snapshot": true,
+    "buildTime": "2020-06-07T03:43:15.792"
+  },
+  {
+    "version": "0.4.0-9c8416f7",
+    "snapshot": true,
+    "buildTime": "2020-06-07T03:15:25.705"
+  },
+  {
+    "version": "0.3.0",
+    "snapshot": false,
+    "buildTime": "2020-05-12T19:20:47.471"
+  },
+  {
+    "version": "0.2.0",
+    "snapshot": false,
+    "buildTime": "2020-04-20T19:01:42.548"
+  },
+  {
+    "version": "0.1.0",
+    "snapshot": false,
+    "buildTime": "2020-03-16T16:06:39.9"
+  }
+]
