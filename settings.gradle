@@ -1,1 +1,3 @@
 rootProject.name = 'services.nokee.dev'
+
+includeBuild 'gradle/plugins/build-src'

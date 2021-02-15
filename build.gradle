@@ -17,7 +17,6 @@ repositories {
         url = 's3://docs.nokee.dev/'
         credentials(AwsCredentials)
     }
-    jcenter()
 }
 
 dependencies {
