@@ -1,0 +1,2 @@
+User-agent: *
+sitemap: https://services.nokee.dev/sitemap.xml
