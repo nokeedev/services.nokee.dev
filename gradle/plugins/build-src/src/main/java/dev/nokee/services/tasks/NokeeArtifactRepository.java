@@ -45,7 +45,7 @@ final class NokeeArtifactRepository {
     }
 
     public Set<NokeeVersionInformation> getVersions() {
-        return get(path("dev/nokee/distributions/maven-metadata.xml"), readAllVersions().andThen(eachVersion(queryVersion())));
+        return get(path("dev/nokee/version/maven-metadata.xml"), readAllVersions().andThen(eachVersion(queryVersion())));
     }
 
     private <T> Set<T> get(URL url, Function<InputStream, Set<T>> mapper) {
@@ -85,7 +85,7 @@ final class NokeeArtifactRepository {
 
     private Function<String, Optional<NokeeVersionInformation>> queryVersion() {
         return version -> {
-            return Optional.ofNullable(Iterables.getOnlyElement(get(path("dev/nokee/distributions/" + version + "/distributions/version-" + version + ".json"), inStream -> {
+            return Optional.ofNullable(Iterables.getOnlyElement(get(path("dev/nokee/version/" + version + "/version-" + version + ".json"), inStream -> {
                     return ImmutableSet.of(new GsonBuilder()
                             .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
                             .create()
