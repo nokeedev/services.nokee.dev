@@ -87,10 +87,14 @@ final class NokeeArtifactRepository {
     private Function<String, Optional<NokeeVersionInformation>> queryVersion() {
         return version -> {
             return Optional.ofNullable(Iterables.getOnlyElement(get(path("dev/nokee/version/" + version + "/version-" + version + ".json"), inStream -> {
-                    return ImmutableSet.of(new GsonBuilder()
-                            .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
-                            .create()
-                            .fromJson(new InputStreamReader(inStream), NokeeVersionInformation.class));
+                    try {
+                        return ImmutableSet.of(new GsonBuilder()
+                                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                                .create()
+                                .fromJson(new InputStreamReader(inStream), NokeeVersionInformation.class));
+                    } catch (Throwable e) {
+                        return ImmutableSet.of(); // ignore version
+                    }
                 }), null));
         };
     }
