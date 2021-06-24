@@ -52,6 +52,7 @@ final class NokeeArtifactRepository {
         try {
             val connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
+            connection.setRequestProperty("User-Agent", "services.nokee.dev");
             connection.connect();
             if (connection.getResponseCode() == 200) {
                 return mapper.apply(connection.getInputStream());
