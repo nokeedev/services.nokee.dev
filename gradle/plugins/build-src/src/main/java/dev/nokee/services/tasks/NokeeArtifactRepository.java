@@ -29,11 +29,11 @@ final class NokeeArtifactRepository {
     }
 
     public static NokeeArtifactRepository releaseRepository() {
-        return new NokeeArtifactRepository("https://repo-release.nokeedev.net");
+        return new NokeeArtifactRepository("https://repo.nokee.dev/release");
     }
 
     public static NokeeArtifactRepository snapshotRepository() {
-        return new NokeeArtifactRepository("https://repo-snapshot.nokeedev.net");
+        return new NokeeArtifactRepository("https://repo.nokee.dev/snapshot");
     }
 
     private URL path(String path) {
