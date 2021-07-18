@@ -1,5 +1,25 @@
 [
   {
+    "version": "0.4.0-202107180241.dc9dcbf4",
+    "snapshot": true,
+    "buildTime": "2021-07-18T02:42:49.582"
+  },
+  {
+    "version": "0.4.0-202107180154.8effbb23",
+    "snapshot": true,
+    "buildTime": "2021-07-18T01:55:45.544"
+  },
+  {
+    "version": "0.4.0-202107180127.88d42e56",
+    "snapshot": true,
+    "buildTime": "2021-07-18T01:28:24.724"
+  },
+  {
+    "version": "0.4.0-202107172337.5953d5ed",
+    "snapshot": true,
+    "buildTime": "2021-07-17T23:38:52.18"
+  },
+  {
     "version": "0.4.0-202107152222.1162d83e",
     "snapshot": true,
     "buildTime": "2021-07-15T22:24:16.878"
