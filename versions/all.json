@@ -1,5 +1,45 @@
 [
   {
+    "version": "0.4.0-202110080031.8a851bff",
+    "snapshot": true,
+    "buildTime": "2021-10-08T00:32:39.727"
+  },
+  {
+    "version": "0.4.0-202110072351.dae5e987",
+    "snapshot": true,
+    "buildTime": "2021-10-07T23:52:22.128"
+  },
+  {
+    "version": "0.4.0-202110072305.f6322b15",
+    "snapshot": true,
+    "buildTime": "2021-10-07T23:06:18.674"
+  },
+  {
+    "version": "0.4.0-202110072158.382fd2a4",
+    "snapshot": true,
+    "buildTime": "2021-10-07T21:59:36.622"
+  },
+  {
+    "version": "0.4.0-202110072043.4c0c4784",
+    "snapshot": true,
+    "buildTime": "2021-10-07T20:44:55.92"
+  },
+  {
+    "version": "0.4.0-202110072005.07840205",
+    "snapshot": true,
+    "buildTime": "2021-10-07T20:07:08.449"
+  },
+  {
+    "version": "0.4.0-202110070422.1772b700",
+    "snapshot": true,
+    "buildTime": "2021-10-07T04:23:28.366"
+  },
+  {
+    "version": "0.4.0-202110070343.f6ac8ed8",
+    "snapshot": true,
+    "buildTime": "2021-10-07T03:44:54.825"
+  },
+  {
     "version": "0.4.0-202110070221.3c543a9a",
     "snapshot": true,
     "buildTime": "2021-10-07T02:23:06.127"
