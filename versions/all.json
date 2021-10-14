@@ -1,5 +1,85 @@
 [
   {
+    "version": "0.4.0-202110140202.ae46cbfd",
+    "snapshot": true,
+    "buildTime": "2021-10-14T02:03:33.267"
+  },
+  {
+    "version": "0.4.0-202110140057.4522cee0",
+    "snapshot": true,
+    "buildTime": "2021-10-14T00:58:46.526"
+  },
+  {
+    "version": "0.4.0-202110140046.10a39132",
+    "snapshot": true,
+    "buildTime": "2021-10-14T00:48:07.943"
+  },
+  {
+    "version": "0.4.0-202110132302.9e78ddaa",
+    "snapshot": true,
+    "buildTime": "2021-10-13T23:04:03.205"
+  },
+  {
+    "version": "0.4.0-202110132200.db322f2d",
+    "snapshot": true,
+    "buildTime": "2021-10-13T22:01:40.149"
+  },
+  {
+    "version": "0.4.0-202110132109.5aab3562",
+    "snapshot": true,
+    "buildTime": "2021-10-13T21:10:37.891"
+  },
+  {
+    "version": "0.4.0-202110132003.015d2a5b",
+    "snapshot": true,
+    "buildTime": "2021-10-13T20:04:00.37"
+  },
+  {
+    "version": "0.4.0-202110131902.a4cdb288",
+    "snapshot": true,
+    "buildTime": "2021-10-13T19:03:41.077"
+  },
+  {
+    "version": "0.4.0-202110131733.a2c6eeea",
+    "snapshot": true,
+    "buildTime": "2021-10-13T17:34:36.291"
+  },
+  {
+    "version": "0.4.0-202110131636.ac8b8259",
+    "snapshot": true,
+    "buildTime": "2021-10-13T16:37:59.953"
+  },
+  {
+    "version": "0.4.0-202110131535.121f53d6",
+    "snapshot": true,
+    "buildTime": "2021-10-13T15:36:58.727"
+  },
+  {
+    "version": "0.4.0-202110131430.e9e7e210",
+    "snapshot": true,
+    "buildTime": "2021-10-13T14:31:20.715"
+  },
+  {
+    "version": "0.4.0-202110131318.3683df6e",
+    "snapshot": true,
+    "buildTime": "2021-10-13T13:19:42.773"
+  },
+  {
+    "version": "0.4.0-202110131220.34699972",
+    "snapshot": true,
+    "buildTime": "2021-10-13T12:21:41.71"
+  },
+  {
+    "version": "0.4.0-202110131144.35c7a8ad",
+    "snapshot": true,
+    "buildTime": "2021-10-13T11:45:31.324"
+  },
+  {
+    "version": "0.4.0-202110130318.275aa903",
+    "snapshot": true,
+    "buildTime": "2021-10-13T03:20:03.978"
+  },
+  {
     "version": "0.4.0-202110130046.c2c6dee3",
     "snapshot": true,
     "buildTime": "2021-10-13T00:48:19.064"
