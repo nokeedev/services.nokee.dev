@@ -1,5 +1,55 @@
 [
   {
+    "version": "0.4.0-202110201421.b2f2a4ef",
+    "snapshot": true,
+    "buildTime": "2021-10-20T14:23:13.327"
+  },
+  {
+    "version": "0.4.0-202110201338.7d28d543",
+    "snapshot": true,
+    "buildTime": "2021-10-20T13:40:09.016"
+  },
+  {
+    "version": "0.4.0-202110200936.bb041121",
+    "snapshot": true,
+    "buildTime": "2021-10-20T09:38:05.02"
+  },
+  {
+    "version": "0.4.0-202110200825.d14cda3b",
+    "snapshot": true,
+    "buildTime": "2021-10-20T08:26:17.392"
+  },
+  {
+    "version": "0.4.0-202110200748.3673f3b3",
+    "snapshot": true,
+    "buildTime": "2021-10-20T07:49:57.546"
+  },
+  {
+    "version": "0.4.0-202110200636.530c049b",
+    "snapshot": true,
+    "buildTime": "2021-10-20T06:37:25.055"
+  },
+  {
+    "version": "0.4.0-202110200549.a9631a17",
+    "snapshot": true,
+    "buildTime": "2021-10-20T05:51:10.364"
+  },
+  {
+    "version": "0.4.0-202110200436.4830b114",
+    "snapshot": true,
+    "buildTime": "2021-10-20T04:38:01.305"
+  },
+  {
+    "version": "0.4.0-202110200327.50946d26",
+    "snapshot": true,
+    "buildTime": "2021-10-20T03:28:17.027"
+  },
+  {
+    "version": "0.4.0-202110200249.bb72bc2b",
+    "snapshot": true,
+    "buildTime": "2021-10-20T02:50:24.368"
+  },
+  {
     "version": "0.4.0-202110200147.c01c354b",
     "snapshot": true,
     "buildTime": "2021-10-20T01:49:13.667"
