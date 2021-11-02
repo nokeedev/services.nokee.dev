@@ -1,5 +1,15 @@
 [
   {
+    "version": "0.4.0-202111012218.ea2a5603",
+    "snapshot": true,
+    "buildTime": "2021-11-01T22:20:18.853"
+  },
+  {
+    "version": "0.4.0-202111012126.e3df7108",
+    "snapshot": true,
+    "buildTime": "2021-11-01T21:27:44.808"
+  },
+  {
     "version": "0.4.0-202110301851.dbb4a501",
     "snapshot": true,
     "buildTime": "2021-10-30T18:52:55.946"
