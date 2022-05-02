@@ -1,0 +1,12 @@
+.main-content > .chapter {
+	background-color: white;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 60rem;
+	padding: 1.5rem;
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+}
