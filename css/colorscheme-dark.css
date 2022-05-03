@@ -34,3 +34,26 @@
 .navigation .menu-icon .navicon:after {
 	background: white;
 }
+
+
+body {
+	background-color: #001824;
+}
+
+/*.landing-page-section {*/
+/*	width: 100%;*/
+/*	margin: 0 auto;*/
+/*	color: #6B6E70;*/
+/*}*/
+
+body h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+#footer p {
+	color: #001824;
+}

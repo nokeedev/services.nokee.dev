@@ -2,22 +2,6 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://services.nokee.dev/</loc>
-    <lastmod>2022-05-02</lastmod>
-  </url>
-  <url>
-    <loc>https://services.nokee.dev/conduct</loc>
-    <lastmod>2022-05-02</lastmod>
-  </url>
-  <url>
-    <loc>https://services.nokee.dev/support.html</loc>
-    <lastmod>2022-05-02</lastmod>
-  </url>
-  <url>
-    <loc>https://services.nokee.dev/support</loc>
-    <lastmod>2022-05-02</lastmod>
-  </url>
-  <url>
-    <loc>https://services.nokee.dev/conduct.html</loc>
-    <lastmod>2022-05-02</lastmod>
+    <lastmod>2022-05-03</lastmod>
   </url>
 </urlset>

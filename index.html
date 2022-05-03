@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-	<!-- Nokee font -->
+	<title>Nokee Services</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="author" content="@nokeedev">
+
+
+<link rel="canonical" href="https://services.nokee.dev/">
+<meta property="og:url" content="https://services.nokee.dev/">
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="Nokee">
+<meta property="og:title" content="Nokee Services">
+
+
+
+
+<meta name="twitter:site" content="@nokeedev">
+<meta name="twitter:creator" content="@nokeedev">
+<meta name="twitter:title" content="Nokee Services">
+<meta name="twitter:card" content="summary">
+
+
+
+
+<!-- Le styles -->
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rajdhani" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-<!-- Required by asciidoc font configuration -->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/normalize-8.0.1.css" rel="stylesheet">
+<link href="/css/prettify.css" rel="stylesheet">
+<link href="/css/menu.css" rel="stylesheet">
 
-<!-- Ordering is important here -->
-<link href="/component-asciidoctor.css" rel="stylesheet">
-<link href="/component-asciidoctor-override.css" rel="stylesheet">
-<link href="/component-asciidoctor-color-override.css" rel="stylesheet">
-	<link href="/css/docs-base.css" rel="stylesheet">
-	<link href="/css/blog-layout.css" rel="stylesheet">
-
-	<link href="/css/normalize-8.0.1.css" rel="stylesheet">
-	<link href="/css/prettify.css" rel="stylesheet">
-
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	<script src="/js/html5shiv.min.js"></script>
-	<![endif]-->
+<link href="/css/colorscheme-light.css" rel="stylesheet">
 
 
-	<title>Nokee Services</title>
-	<!-- Fav and touch icons -->
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- Fav and touch icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,17 +56,27 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#001824">
 <meta name="msapplication-TileColor" content="#00a300">
 <meta name="theme-color" content="#ffffff">
-	<link href="/component-menu.css" rel="stylesheet">
 
 
-<link href="/component-menu-light.css" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157599764-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-157599764-1');
+</script>
 
 
-	<meta charset="utf-8">
+<!-- Le styles -->
+<link href="css/asciidoctor.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+
 </head>
 <body onload="prettyPrint()">
-	
 
+	
 <nav class="navigation" aria-labelledby="primary-navigation">
 	<a href="https://nokee.dev" class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 49.96"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="full-dark"><g id="nokee"><path d="M180.38,40.13a6.32,6.32,0,0,1-6.25-6.25V18.37a6.32,6.32,0,0,1,6.25-6.25H193.8A5.92,5.92,0,0,1,198.17,14a6,6,0,0,1,1.83,4.4V28.88H180.49s-.05,4.85,0,4.89,19.51.07,19.51.07v6.29Zm.11-16.84h13.15V18.48H180.49Z"/><path d="M51.3,40.13v-28H71A6,6,0,0,1,75.34,14a6,6,0,0,1,1.83,4.4V40.13H70.88l-.07-21.65H57.65l-.06,21.65Z"/><path d="M88.94,40.13a6.32,6.32,0,0,1-6.25-6.25V18.37a6.32,6.32,0,0,1,6.25-6.25h13.42A6,6,0,0,1,106.74,14a6.07,6.07,0,0,1,1.82,4.4V33.88a6.05,6.05,0,0,1-1.82,4.4,5.92,5.92,0,0,1-4.38,1.85Zm13.26-6.36s0-15.29,0-15.29H89.05s0,15.25,0,15.29S102.16,33.82,102.2,33.77Z"/><path d="M114.13,40.13V6.26h6.29V23.38h4l8.84-11.28h8.19L129.92,26.54l11.49,13.59h-8.19l-8.84-10.42h-4V40.13Z"/><path d="M149.25,40.13A6.32,6.32,0,0,1,143,33.88V18.37a6.32,6.32,0,0,1,6.25-6.25h13.42A6,6,0,0,1,167.05,14a6.07,6.07,0,0,1,1.82,4.4V28.88H149.36s-.05,4.85,0,4.89,19.51.07,19.51.07v6.29Zm.11-16.84h13.15V18.48H149.36Z"/></g><g id="bird"><path d="M41.82,10.21,25.58.83a6.24,6.24,0,0,0-6.23,0L3.11,10.21A6.24,6.24,0,0,0,0,15.6V34.35a6.25,6.25,0,0,0,3.11,5.4l16.24,9.37a6.24,6.24,0,0,0,6.23,0l16.24-9.37a6.25,6.25,0,0,0,3.11-5.4V15.6A6.24,6.24,0,0,0,41.82,10.21Zm-6,10.92c0,12.59-7.92,17.46-21.73,17.46A16.46,16.46,0,0,1,5,36c8.22-5.58,10.56-9.95,12.4-17.5,1.11-4.54,4.25-8.06,9.22-8.06,3.6,0,6.62,1.28,8.14,4.7h6.5l-5.49,4.39C35.82,20,35.84,20.57,35.84,21.13Z"/><path d="M28.94,13.72a3.35,3.35,0,0,0-3,1.76.83.83,0,0,0,1.46.79,1.7,1.7,0,0,1,3,0,.83.83,0,0,0,1.13.33.82.82,0,0,0,.33-1.12A3.36,3.36,0,0,0,28.94,13.72Z"/></g></g></g></g></svg></a>
 	<input class="navigation-hamburger" type="checkbox" id="navigation-hamburger" />
@@ -63,19 +96,15 @@
 
 	<div class="main-content">
 
-		<div class="chapter">
-			<div class="header">
-				<h1>Nokee Services</h1>
-			</div>
+	<h1>Nokee Services</h1>
 
-			<div class="content">
-				<div id="preamble">
+	<p><div id="preamble">
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 See the <a href="https://nokee.dev/blog/what-is-the-latest-nokee-version">announcement blog post</a> for more information.
@@ -89,7 +118,7 @@ See the <a href="https://nokee.dev/blog/what-is-the-latest-nokee-version">announ
 </div>
 </div>
 <div class="sect1">
-<h2 id="version_information"><a class="anchor" href="#version_information"></a><a class="link" href="#version_information">Version information</a></h2>
+<h2 id="_version_information">Version information</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -105,9 +134,8 @@ See the <a href="https://nokee.dev/blog/what-is-the-latest-nokee-version">announ
 </ul>
 </div>
 </div>
-</div>
-			</div>
-		</div>
+</div></p>
+
 	</div>
 		<div id="push"></div>
 
@@ -117,10 +145,14 @@ See the <a href="https://nokee.dev/blog/what-is-the-latest-nokee-version">announ
 			</div>
 		</div>
 
+		<gdpr-banner></gdpr-banner>
+<script src="/js/gdpr-banner.js" type="module"></script>
+
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="/js/prettify.js"></script>
+		<script src="js/prettify.js"></script>
 
-</body>
+	</body>
+
 </html>
