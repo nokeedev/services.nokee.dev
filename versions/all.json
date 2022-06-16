@@ -1,5 +1,55 @@
 [
   {
+    "version": "0.4.2322-202206151424.9ec23b77",
+    "snapshot": true,
+    "buildTime": "2022-06-15T14:25:21.579"
+  },
+  {
+    "version": "0.4.2288-202206151419.95a1781a",
+    "snapshot": true,
+    "buildTime": "2022-06-15T14:20:23.555"
+  },
+  {
+    "version": "0.4.2279-202206151343.fc55c75d",
+    "snapshot": true,
+    "buildTime": "2022-06-15T13:43:58.833"
+  },
+  {
+    "version": "0.4.2285-202206151342.10969b9b",
+    "snapshot": true,
+    "buildTime": "2022-06-15T13:43:35.092"
+  },
+  {
+    "version": "0.4.2279-202206151341.7aea51f2",
+    "snapshot": true,
+    "buildTime": "2022-06-15T13:42:20.87"
+  },
+  {
+    "version": "0.4.2273-202206151217.38c931ba",
+    "snapshot": true,
+    "buildTime": "2022-06-15T12:18:11.29"
+  },
+  {
+    "version": "0.4.2272-202206151214.9e276ca2",
+    "snapshot": true,
+    "buildTime": "2022-06-15T12:15:54.555"
+  },
+  {
+    "version": "0.4.2252-202206151210.b854a959",
+    "snapshot": true,
+    "buildTime": "2022-06-15T12:10:36.288"
+  },
+  {
+    "version": "0.4.2271-202206150913.bcfedcd0",
+    "snapshot": true,
+    "buildTime": "2022-06-15T09:14:29.718"
+  },
+  {
+    "version": "0.4.2252-202206150752.e9d6eba4",
+    "snapshot": true,
+    "buildTime": "2022-06-15T07:53:17.257"
+  },
+  {
     "version": "0.4.2270-202206141956.ad1afa75",
     "snapshot": true,
     "buildTime": "2022-06-14T19:57:18.787"
