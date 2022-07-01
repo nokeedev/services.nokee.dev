@@ -1,5 +1,10 @@
 [
   {
+    "version": "0.4.2315-202206302039.29ccf13f",
+    "snapshot": true,
+    "buildTime": "2022-06-30T20:39:37.624"
+  },
+  {
     "version": "0.4.2314-202206271356.ddef5035",
     "snapshot": true,
     "buildTime": "2022-06-27T13:57:03.185"
