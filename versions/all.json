@@ -1,5 +1,35 @@
 [
   {
+    "version": "0.4.2693-202208262338.96538bc0",
+    "snapshot": true,
+    "buildTime": "2022-08-26T23:39:14.135"
+  },
+  {
+    "version": "0.4.2648-202208261734.4a346dd2",
+    "snapshot": true,
+    "buildTime": "2022-08-26T17:36:30.581"
+  },
+  {
+    "version": "0.4.2649-202208261734.69248aa2",
+    "snapshot": true,
+    "buildTime": "2022-08-26T17:35:58.278"
+  },
+  {
+    "version": "0.4.2693-202208261718.924e937d",
+    "snapshot": true,
+    "buildTime": "2022-08-26T17:20:25.742"
+  },
+  {
+    "version": "0.4.2692-202208261653.d96966c3",
+    "snapshot": true,
+    "buildTime": "2022-08-26T16:55:14.154"
+  },
+  {
+    "version": "0.4.2690-202208261335.b4d9eee1",
+    "snapshot": true,
+    "buildTime": "2022-08-26T13:37:38.747"
+  },
+  {
     "version": "0.4.2647-202208260048.a294a63a",
     "snapshot": true,
     "buildTime": "2022-08-26T00:50:26.046"
